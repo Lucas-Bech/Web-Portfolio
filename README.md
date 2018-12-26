@@ -1,4 +1,4 @@
-# cv
+# Vue.js webpage
 
 ## Project setup
 ```
@@ -27,3 +27,14 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+# Dog Fetcher
+Webpage interface to the API: https://dog.ceo/dog-api/
+
+Using:
+- HTML
+- CSS
+- JavaScript
+- jQuery via CDN
+- AJAX via CDN
+- PHP

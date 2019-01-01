@@ -32,9 +32,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 Webpage interface to the API: https://dog.ceo/dog-api/
 
 Using:
-- HTML
-- CSS
-- JavaScript
+- HTML5
+- CSS3
+- JavaScript (ES6)
 - jQuery via CDN
 - AJAX via CDN
 - PHP

@@ -4,16 +4,19 @@
       <div class="dog_options">
         <form id="dogFilter" @submit.prevent="fetchDog">
           <h2>Dog Filter</h2>
-          <select v-model="breed" name="breed">
-            <option value="option value">Option value</option>
+          <select v-model="breed">
+            <option
+              v-for="(dog, index) in breeds"
+              :key="index"
+              :value="dog.api_value"
+            >{{ dog.name }}</option>
           </select>
-          <span>{{ breed }}</span>
           <input type="submit" value="Fetch Dog">
         </form>
       </div>
       <div class="dog_img">
         <div id="dogFetcher">
-          <img :image="src='images/loading.gif'" alt="The dog has gone missing">
+          <img v-bind:src="image" alt="The dog has gone missing">
         </div>
       </div>
     </div>
@@ -21,108 +24,89 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "DogFetcher",
   data() {
     return {
-      breed: "African",
-      image: ""
+      breed: "random",
+      image: require("../assets/loading.gif"),
+      breeds: [], // Properties: name, api_value
+      API: {
+        breedList: "https://dog.ceo/api/breeds/list/all",
+        random: "https://dog.ceo/api/breeds/image/random"
+      }
     };
   },
+  computed: {
+    of_breed() {
+      return "https://dog.ceo/api/breed/" + this.breed + "/images/random";
+    }
+  },
   methods: {
-    fetchDog(submitEvent) {
+    fetchDog() {
+      let img_url = this.breed == "random" ? this.API.random : this.of_breed;
+      console.log("img_url: " + img_url);
+      this.image = require("../assets/loading.gif");
+      axios
+        .get(img_url)
+        .then(response => {
+          this.image = response.data.message;
+        })
+        .catch(error => console.log(error));
       console.log("Breed: " + this.breed);
       console.log("Image: " + this.image);
+    },
+    populateSelection() {
+      this.breeds.push({ name: "Random", api_value: "random" });
+
+      // Retrieve list of available breeds from API
+      const request = new XMLHttpRequest();
+
+      request.onreadystatechange = () => {
+        if (request.readyState !== 4 || request.status !== 200) return;
+
+        let breedList = JSON.parse(request.response)["message"];
+        for (let breed in breedList) {
+          let breed_origins = breedList[breed];
+
+          // No origins
+          if (breed_origins.length === 0) {
+            this.breeds.push({
+              name: this.capitalizeWord(breed),
+              api_value: breed
+            });
+            continue;
+          }
+          // Has origins
+          breed_origins.forEach(breed_origin => {
+            let api_value = breed + "-" + breed_origin;
+            let name =
+              this.capitalizeWord(breed_origin) +
+              " " +
+              this.capitalizeWord(breed);
+            this.breeds.push({ name: name, api_value: api_value });
+          });
+        }
+      };
+      request.open("GET", this.API.breedList, true);
+      request.send();
+    },
+    capitalizeWord(word) {
+      return word[0].toUpperCase() + word.slice(1);
     }
+  },
+  beforeMount() {
+    this.fetchDog();
+    this.populateSelection();
   }
 };
-/*
-function capitalizeWord(word) {
-  return word[0].toUpperCase() + word.slice(1);
-}
-
-class DogAPI {
-  constructor(dom_image, dogFilter) {
-    this.dom_image = dom_image;
-
-    // Filter Form
-    this.dogFilter = dogFilter;
-    this._initFilter();
-
-    $(document).on("submit", "#dogFilter", function() {
-      DogFetcher.fetchDog($("#dogFilter > select").val());
-      return false;
-    });
-  }
-
-async _initFilter() {
-    // Random Field
-    var option = document.createElement("option");
-    option.innerHTML = "Random";
-    option.setAttribute("value", "");
-    this.dogFilter.appendChild(option);
-
-    // Append each breed from API to selection
-    let response = await this._getBreedList();
-    var breeds = response["message"];
-
-    for (let breed in breeds) {
-      let dog_origins = breeds[breed].length;
-
-      if (dog_origins === 0) {
-        option = document.createElement("option");
-        option.setAttribute("value", breed);
-        option.innerHTML = capitalizeWord(breed);
-        this.dogFilter.appendChild(option);
-      } else
-        for (let origin = dog_origins - 1; origin > -1; origin--) {
-          option = document.createElement("option");
-          option.setAttribute("value", breed + "-" + breeds[breed][origin]);
-          option.innerHTML =
-            capitalizeWord(breeds[breed][origin]) + " " + capitalizeWord(breed);
-          this.dogFilter.appendChild(option);
-        }
-    }
-  }
-
-  async _getBreedList() {
-    return await $.ajax({
-      type: "GET",
-      url: "https://dog.ceo/api/breeds/list/all"
-    });
-  }
-
-  // AJAX -> PHP -> API
-  async fetchDog(breed) {
-    DogFetcher._loadImage("images/loading.gif");
-
-    var dogURL = await $.ajax({
-      type: "GET",
-      url: "fetchDog.php",
-      data: {
-        breed: breed
-      }
-    });
-    DogFetcher._loadImage(dogURL);
-  }
-
-  _loadImage(imgSrc) {
-    this.dom_image.attr("src", imgSrc);
-  }
-}
-
-var DogFetcher = new DogAPI(
-  console.log(document.getElementById("#dogFetcher"))
-  //$("#dogFetcher > img")
-  //$("#dogFilter > select")[0]
-);
-DogFetcher.fetchDog();
-*/
 </script>
 
 <style>
 .container {
-  margin: 1.5%;
+  margin: 0.5%;
 }
 .grid-3x3 {
   display: grid;
@@ -152,13 +136,13 @@ DogFetcher.fetchDog();
   background-size: cover;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(images/dogpaws.jpg);
+    url("../assets/dogpaws.jpg");
   background-position: center top;
   height: 350px;
   color: white;
 }
 .dog_options {
-  background-image: url(images/dog.jpg);
+  background-image: url("../assets/dog.jpg");
   background-repeat: no-repeat;
   max-width: 615px;
 }

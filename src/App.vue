@@ -28,7 +28,7 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 
 body {
-  background-color: rgba(48, 46, 46, 0.664);
+  background-color: #0E0B16;
 }
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
@@ -43,11 +43,13 @@ nav {
   a {
     padding: 10px;
     text-decoration: none;
-    background: #fff;
+    background: #4717F6;
     border-radius: 3px;
-    color: rgb(0, 110, 255);
+    color: #E7DFDD;
     font-weight: bold;
     margin-right: 15px;
   }
 }
+
+// #1A2930  #F7CE3E  #0A1612  #0F1626  #031424  #1A0315  #3C3C3C  #F9BE02  #192231  #494E6B  #414141  #22252C
 </style>

@@ -157,16 +157,14 @@ export default {
 
     input[type="submit"] {
     border-radius: 0.5em;
-    }
-    
+    } 
   }
-
 }
 body {
   background-color: #121212;
 }
 h2 {
-  color: white;
+  color: #FFDB3E;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
-    <div class="grid-3x3 grid-gold-theme">
-      <div class="dog_options">
-        <form id="dogFilter" @submit.prevent="fetchDog">
+    <div id="dogFetcher">
+      
+      <div id="optionsContainer">
+        <form id="fetchDog" @submit.prevent="fetchDog">
           <h2>Dog Filter</h2>
           <select v-model="breed">
             <option
@@ -14,13 +14,11 @@
           <input type="submit" value="Fetch Dog">
         </form>
       </div>
-      <div class="dog_img">
-        <div id="dogFetcher">
+
+      <div id="imageContainer">
           <img v-bind:src="image" alt="The dog has gone missing">
-        </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -47,7 +45,6 @@ export default {
   methods: {
     fetchDog() {
       let img_url = this.breed == "random" ? this.API.random : this.of_breed;
-      console.log("img_url: " + img_url);
       this.image = require("../assets/loading.gif");
       axios
         .get(img_url)
@@ -55,8 +52,6 @@ export default {
           this.image = response.data.message;
         })
         .catch(error => console.log(error));
-      console.log("Breed: " + this.breed);
-      console.log("Image: " + this.image);
     },
     populateSelection() {
       this.breeds.push({ name: "Random", api_value: "random" });
@@ -104,31 +99,28 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .container {
   margin: 0.5%;
 }
-.grid-3x3 {
-  display: grid;
+#dogFetcher {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   background-color: #232323;
   padding: 1em;
   border-radius: 0.5em;
+  div {
+    background-color: #090d12;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    border: 1px inset black;
+    margin: 1em;
+    border-radius: 0.5em;
+  }
 }
-.grid-3x3 > div {
-  background-color: #090d12;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-}
-.grid-gold-theme > div {
-  border: 1px inset black;
-  margin: 1em;
-  border-radius: 0.5em;
-}
-.dog_img {
+#imageContainer {
   position: relative;
   background-repeat: no-repeat;
   max-width: 615px;
@@ -140,39 +132,41 @@ export default {
   background-position: center top;
   height: 350px;
   color: white;
+
+  img {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 0.5em;
+    background-size: contain;
+  }
 }
-.dog_options {
+#optionsContainer {
   background-image: url("../assets/dog.jpg");
   background-repeat: no-repeat;
   max-width: 615px;
-}
-.dog_options form {
-  position: relative;
-  float: right;
-  right: 1em;
-  top: 1.5em;
+  
+  form {
+    position: relative;
+    float: right;
+    right: 1em;
+    top: 1.5em;
+    
+    select {
+    border-radius: 0.5em;
+    }
+
+    input[type="submit"] {
+    border-radius: 0.5em;
+    }
+    
+  }
+
 }
 body {
   background-color: #121212;
 }
-#dogFetcher {
-  height: 100%;
-  width: auto;
-}
-#dogFetcher > img {
-  max-height: 100%;
-  max-width: 100%;
-  border-radius: 0.5em;
-  background-size: contain;
-}
 h2 {
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-select {
-  border-radius: 0.5em;
-}
-input[type="button"] {
-  border-radius: 0.5em;
 }
 </style>

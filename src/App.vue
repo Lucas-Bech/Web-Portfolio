@@ -1,14 +1,13 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="./">Home</router-link>
-      <router-link to="./About">About</router-link>
+   
+     <nav>
+      <router-link to="./">Home</router-link>      
       <router-link to="./DogFetcher">Dog Fetcher</router-link>
+      <router-link to="./About">About</router-link>
     </nav>
 
     <router-view/>
-
-    <Skills msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
@@ -25,56 +24,30 @@ export default {
 };
 </script>
 
-<style>
-body {
-  background-color: black;
-}
+<style lang="scss">
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 
 body {
-  background-color: #eeeeee;
-  font-family: "Montserrat", sans-serif;
-  display: grid;
-  grid-template-rows: auto;
-  justify-items: center;
-  align-items: center;
-}
-body,
-html {
-  margin: 0;
-  height: 100%;
-}
-#app {
-  width: 50%;
+  background-color: rgba(48, 46, 46, 0.664);
 }
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #2c3e50;  
+  position: relative;
 }
-body {
-  background-color: #eeeeee;
-  font-family: "Montserrat", sans-serif;
-  display: grid;
-  grid-template-rows: auto;
-  justify-items: center;
-  padding-top: 50px;
-}
-
 nav {
   padding: 20px 20px 20px 0;
-}
-
-nav a {
-  padding: 10px;
-  text-decoration: none;
-  background: #fff;
-  border-radius: 3px;
-  color: rgb(0, 110, 255);
-  font-weight: bold;
-  margin-right: 15px;
+  a {
+    padding: 10px;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 3px;
+    color: rgb(0, 110, 255);
+    font-weight: bold;
+    margin-right: 15px;
+  }
 }
 </style>

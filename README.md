@@ -1,6 +1,7 @@
 # Vue.js webpage
 
 ## Project setup
+### In root directory:
 ```
 npm install
 ```

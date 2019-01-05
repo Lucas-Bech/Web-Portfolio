@@ -1,24 +1,17 @@
 <template>
-    <div id="dogFetcher">
-      
-      <div id="optionsContainer">
-        <form id="fetchDog" @submit.prevent="fetchDog">
-          <h2>Dog Filter</h2>
-          <select v-model="breed">
-            <option
-              v-for="(dog, index) in breeds"
-              :key="index"
-              :value="dog.api_value"
-            >{{ dog.name }}</option>
-          </select>
-          <input type="submit" value="Fetch Dog">
-        </form>
-      </div>
-
-      <div id="imageContainer">
-          <img v-bind:src="image" alt="The dog has gone missing">
-      </div>
+  <div id="dogFetcher">
+    <div id="optionsContainer">
+      <form id="fetchDog" @submit.prevent="fetchDog">
+        <h2>Dog Filter</h2>
+        <v-select class="dropdown" label="name" :options="breeds" v-model="breed"></v-select>
+        <input type="submit" value="Fetch Dog">
+      </form>
     </div>
+
+    <div id="imageContainer">
+      <img v-bind:src="image" alt="The dog has gone missing">
+    </div>
+  </div>
 </template>
 
 <script>
@@ -28,7 +21,7 @@ export default {
   name: "DogFetcher",
   data() {
     return {
-      breed: "random",
+      breed: { name: "Random", api_value: "random" },
       image: require("../assets/loading.gif"),
       breeds: [], // Properties: name, api_value
       API: {
@@ -39,19 +32,19 @@ export default {
   },
   computed: {
     of_breed() {
-      return "https://dog.ceo/api/breed/" + this.breed + "/images/random";
+      return (
+        "https://dog.ceo/api/breed/" + this.breed.api_value + "/images/random"
+      );
     }
   },
   methods: {
     fetchDog() {
-      let img_url = this.breed == "random" ? this.API.random : this.of_breed;
+      let img_url =
+        this.breed.api_value == "random" ? this.API.random : this.of_breed;
       this.image = require("../assets/loading.gif");
-      axios
-        .get(img_url)
-        .then(response => {
-          this.image = response.data.message;
-        })
-        .catch(error => console.log(error));
+      axios.get(img_url).then(response => {
+        this.image = response.data.message;
+      });
     },
     populateSelection() {
       this.breeds.push({ name: "Random", api_value: "random" });
@@ -99,7 +92,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .container {
   margin: 0.5%;
 }
@@ -110,7 +103,7 @@ export default {
   background-color: #232323;
   padding: 1em;
   border-radius: 0.5em;
-  div {
+  /*div {
     background-color: #090d12;
     text-align: center;
     padding: 20px 0;
@@ -118,7 +111,7 @@ export default {
     border: 1px inset black;
     margin: 1em;
     border-radius: 0.5em;
-  }
+  }*/
 }
 #imageContainer {
   position: relative;
@@ -130,7 +123,7 @@ export default {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../assets/dogpaws.jpg");
   background-position: center top;
-  height: 350px;
+  max-height: 350px;
   color: white;
 
   img {
@@ -144,27 +137,55 @@ export default {
   background-image: url("../assets/dog.jpg");
   background-repeat: no-repeat;
   max-width: 615px;
-  
+  max-height: 440px;
+
   form {
     position: relative;
     float: right;
     right: 1em;
     top: 1.5em;
-    
-    select {
-    border-radius: 0.5em;
-    }
 
     input[type="submit"] {
-    border-radius: 0.5em;
-    } 
+      border-radius: 0.5em;
+      padding: 10px;
+      text-decoration: none;
+      background: #4717f6;
+      border-radius: 3px;
+      color: #e7dfdd;
+      font-weight: bold;
+      margin-right: 15px;
+    }
   }
 }
 body {
   background-color: #121212;
 }
 h2 {
-  color: #FFDB3E;
+  color: #ffdb3e;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+$dark: #35414a;
+$semilight: #86919a;
+$blue: #5aafee;
+.dropdown {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: white;
+}
+v-option {
+  color: #f7ce3e;
+  background: none;
+  outline: none;
+  box-shadow: none;
+  &:hover {
+    border: 10px black solid;
+    background-color: #0a1612;
+    border: none;
+  }
+  padding: 1em;
+  cursor: pointer;
+  background-color: #485761;
+}
+// #1A2930  #F7CE3E  #0A1612  #0F1626  #031424  #1A0315  #3C3C3C  #F9BE02  #192231  #494E6B  #414141  #22252C
 </style>

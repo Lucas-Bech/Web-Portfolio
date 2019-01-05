@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div id="skills">
     <div class="holder">
       <form @submit.prevent="addSkill">
         <input
@@ -39,7 +39,7 @@
 
 <script>
 export default {
-  name: "Skills",
+  name: "skills",
   data() {
     return {
       skill: "",
@@ -65,8 +65,15 @@ export default {
 </script>
 
 <style scoped>
-@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 @import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
+
+#skills {
+  display: grid;
+  grid-template-areas:
+    "github github github"
+    "codesignals html5 css3"
+    "c++";
+}
 
 .alert-in-enter-active {
   animation: bounce-in 0.5s;

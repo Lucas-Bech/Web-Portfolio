@@ -7,6 +7,10 @@
         <router-link to="/Skills">Skills</router-link>
       </nav>
     </header>
+    <svg viewBox="0 0 100 25">
+      <path fill="#9EAFFD" opacity="0.5" d="M0 30 V15 Q30 3 60 15 V30z"></path>
+      <path fill="#9EAFFD" d="M0 30 V12 Q30 17 55 12 T100 11 V30z"></path>
+    </svg>
     <router-view/>
     <footer>
       <a id="github-logo" href="https://github.com/Lucas-Bech">
@@ -31,7 +35,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  background-color: #0e0b16;
+  background-color: white;
 }
 #app {
   min-height: 100%;
@@ -44,6 +48,9 @@ body {
   text-align: center;
   color: #2c3e50;
   position: relative;
+}
+svg {
+  //transform: rotate(180deg);
 }
 footer {
   display: grid;

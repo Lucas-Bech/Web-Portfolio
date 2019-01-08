@@ -1,17 +1,15 @@
 <template>
   <div id="app">
-    <header>
-      <nav>
-        <router-link to="/Home">Home</router-link>
-        <router-link to="/DogFetcher">Dog Fetcher</router-link>
-        <router-link to="/Skills">Skills</router-link>
-      </nav>
-    </header>
-    <svg viewBox="0 0 100 25">
-      <path fill="#9EAFFD" opacity="0.5" d="M0 30 V15 Q30 3 60 15 V30z"></path>
-      <path fill="#9EAFFD" d="M0 30 V12 Q30 17 55 12 T100 11 V30z"></path>
-    </svg>
-    <router-view/>
+    <div id="top">
+      <header>
+        <nav>
+          <router-link to="/Home">Home</router-link>
+          <router-link to="/DogFetcher">Dog Fetcher</router-link>
+          <router-link to="/Skills">Skills</router-link>
+        </nav>
+      </header>
+      <router-view/>
+    </div>
     <footer>
       <a id="github-logo" href="https://github.com/Lucas-Bech">
         <img src="./assets/GitHub_logo.png" alt="https://github.com/Lucas-Bech">
@@ -28,14 +26,27 @@ export default {
 </script>
 
 <style lang="scss">
+@import url("https://cdn.jsdelivr.net/npm/animate.css@3.5.1");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+$sweetBlue: #1A2930;
+$darkBlue1: #0F1626;
+$darkBlue2: #031424;
+$darkBlue3: #192231;
+$darkGreen: #0A1612;
+$lightViolet: #494E6B;
+$vividYellow: #F9BE02;
+$blandYellow: #F7CE3E;
+$brownGrey: #414141;
+$darkViolet: #22252C;
 
 html,
 body {
   width: 100%;
   height: 100%;
   background-color: white;
+  margin: 0;
 }
 #app {
   min-height: 100%;
@@ -48,17 +59,33 @@ body {
   text-align: center;
   color: #2c3e50;
   position: relative;
+  
+}
+#top {
+  min-height: 100vh;
+  background: url('./assets/background.svg') no-repeat;
+  background-size: cover;
+  padding-bottom: 200px;
 }
 svg {
   //transform: rotate(180deg);
+}
+header {
+  float: right;
+  padding: 20px;
 }
 footer {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(3, 1fr);
   padding: 20px;
+  margin-top: 3em;
+  background-color: $sweetBlue;
 }
 nav {
+  position: relative;
+  left: -100px;
+  float: right;
   padding: 20px 20px 20px 0px;
   margin: 10px;
   a {
@@ -68,9 +95,11 @@ nav {
     border-radius: 3px;
     color: #e7dfdd;
     font-weight: bold;
-    margin-right: 15px;
+    margin: .9em;
     &:hover {
       background-color: #2700b3;
+      background: $vividYellow;
+      transition: background .2s;
     }
   }
 }
@@ -81,6 +110,5 @@ nav {
     background-color: #192231;
     float: left;
   }
-}
-// #1A2930  #F7CE3E  #0A1612  #0F1626  #031424  #1A0315  #3C3C3C  #F9BE02  #192231  #494E6B  #414141  #22252C
+}                     
 </style>

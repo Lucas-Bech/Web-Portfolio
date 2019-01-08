@@ -37,6 +37,9 @@ export default {
       );
     }
   },
+  created: function() {
+    this.$parent.$data.background_image = '';
+  },
   methods: {
     fetchDog() {
       let img_url =

@@ -26,10 +26,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.32630032"
-     inkscape:cx="756.9989"
-     inkscape:cy="535.60923"
+     inkscape:cx="850.47107"
+     inkscape:cy="514.1566"
      inkscape:document-units="px"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1366"
      inkscape:window-height="705"
@@ -41,10 +41,10 @@
      id="defs10">
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="-131.78044 : 549.19398 : 1"
+       inkscape:vp_x="-131.78044 : 540 : 1"
        inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_z="1788.2196 : 549.19398 : 1"
-       inkscape:persp3d-origin="828.21956 : 369.19398 : 1"
+       inkscape:vp_z="1788.2196 : 540 : 1"
+       inkscape:persp3d-origin="828.21956 : 360 : 1"
        id="perspective3405" />
     <linearGradient
        inkscape:collect="always"
@@ -62,11 +62,11 @@
        inkscape:collect="always"
        id="linearGradient2435">
       <stop
-         style="stop-color:#00ffff;stop-opacity:1;"
+         style="stop-color:#00c3d9;stop-opacity:0.95169079"
          offset="0"
          id="stop2431" />
       <stop
-         style="stop-color:#465b3c;stop-opacity:0"
+         style="stop-color:#a5e18a;stop-opacity:0.773"
          offset="1"
          id="stop2433" />
     </linearGradient>
@@ -79,7 +79,6 @@
          id="stop2411" />
     </linearGradient>
     <linearGradient
-       inkscape:collect="always"
        id="linearGradient2357"
        osb:paint="gradient">
       <stop
@@ -92,7 +91,6 @@
          id="stop2355" />
     </linearGradient>
     <linearGradient
-       inkscape:collect="always"
        id="linearGradient913"
        osb:paint="gradient">
       <stop
@@ -144,17 +142,16 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      id="layer1"
      inkscape:groupmode="layer"
-     inkscape:label="Layer 1"
-     sodipodi:insensitive="true">
+     inkscape:label="Layer 1">
     <path
-       style="opacity:0.503;fill:url(#linearGradient2439);fill-opacity:1;fill-rule:evenodd;stroke:#05004e;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.74371858"
+       style="opacity:1;fill:url(#linearGradient2439);fill-opacity:1;fill-rule:evenodd;stroke:#05004e;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.74371858"
        d="M 0,0 782.85719,4.2856982e-8 C 782.85719,4.2856982e-8 974.28571,245.71428 1320,200 c 345.7143,-45.71429 602.8571,100 602.8571,100 v 785.7143 L -2.8571429,1077.1429 Z"
        id="path38"
        inkscape:connector-curvature="0"
@@ -222,43 +219,43 @@
          id="path3409"
          style="fill:#353564;fill-rule:evenodd;stroke:none;stroke-linejoin:round"
          inkscape:box3dsidetype="6"
-         d="M 913.26911,414.96847 V 735.36504 L 1100.4456,691.60411 V 439.74938 Z"
-         points="913.26911,735.36504 1100.4456,691.60411 1100.4456,439.74938 913.26911,414.96847 " />
+         d="M 913.26911,424.16245 V 744.55902 L 1100.4456,700.79809 V 448.94336 Z"
+         points="913.26911,744.55902 1100.4456,700.79809 1100.4456,448.94336 913.26911,424.16245 " />
       <path
          sodipodi:type="inkscape:box3dside"
          id="path3417"
          style="fill:#afafde;fill-rule:evenodd;stroke:none;stroke-linejoin:round"
          inkscape:box3dsidetype="13"
-         d="m 913.26911,735.36504 680.35489,133.17333 60.3291,-104.70486 -553.5075,-72.2294 z"
-         points="1593.624,868.53837 1653.9531,763.83351 1100.4456,691.60411 913.26911,735.36504 " />
+         d="m 913.26911,744.55902 680.35489,133.17333 60.3291,-104.70486 -553.5075,-72.2294 z"
+         points="1593.624,877.73235 1653.9531,773.02749 1100.4456,700.79809 913.26911,744.55902 " />
       <path
          sodipodi:type="inkscape:box3dside"
          id="path3419"
          style="fill:#e9e9ff;fill-rule:evenodd;stroke:none;stroke-linejoin:round"
          inkscape:box3dsidetype="11"
-         d="m 1100.4456,439.74938 553.5075,-40.90201 v 364.98614 l -553.5075,-72.2294 z"
-         points="1653.9531,398.84737 1653.9531,763.83351 1100.4456,691.60411 1100.4456,439.74938 " />
+         d="m 1100.4456,448.94336 553.5075,-40.90201 v 364.98614 l -553.5075,-72.2294 z"
+         points="1653.9531,408.04135 1653.9531,773.02749 1100.4456,700.79809 1100.4456,448.94336 " />
       <path
          sodipodi:type="inkscape:box3dside"
          id="path3411"
          style="fill:#4d4d9f;fill-rule:evenodd;stroke:none;stroke-linejoin:round"
          inkscape:box3dsidetype="5"
-         d="m 913.26911,414.96847 680.35489,-75.4133 60.3291,59.2922 -553.5075,40.90201 z"
-         points="1593.624,339.55517 1653.9531,398.84737 1100.4456,439.74938 913.26911,414.96847 " />
+         d="m 913.26911,424.16245 680.35489,-75.4133 60.3291,59.2922 -553.5075,40.90201 z"
+         points="1593.624,348.74915 1653.9531,408.04135 1100.4456,448.94336 913.26911,424.16245 " />
       <path
          sodipodi:type="inkscape:box3dside"
          id="path3415"
          style="fill:#d7d7ff;fill-rule:evenodd;stroke:none;stroke-linejoin:round"
          inkscape:box3dsidetype="14"
-         d="m 1593.624,339.55517 v 528.9832 l 60.3291,-104.70486 V 398.84737 Z"
-         points="1593.624,868.53837 1653.9531,763.83351 1653.9531,398.84737 1593.624,339.55517 " />
+         d="m 1593.624,348.74915 v 528.9832 l 60.3291,-104.70486 V 408.04135 Z"
+         points="1593.624,877.73235 1653.9531,773.02749 1653.9531,408.04135 1593.624,348.74915 " />
       <path
          sodipodi:type="inkscape:box3dside"
          id="path3413"
          style="fill:#8686bf;fill-rule:evenodd;stroke:none;stroke-linejoin:round"
          inkscape:box3dsidetype="3"
-         d="m 913.26911,414.96847 680.35489,-75.4133 v 528.9832 L 913.26911,735.36504 Z"
-         points="1593.624,339.55517 1593.624,868.53837 913.26911,735.36504 913.26911,414.96847 " />
+         d="m 913.26911,424.16245 680.35489,-75.4133 v 528.9832 L 913.26911,744.55902 Z"
+         points="1593.624,348.74915 1593.624,877.73235 913.26911,744.55902 913.26911,424.16245 " />
     </g>
   </g>
 </svg>

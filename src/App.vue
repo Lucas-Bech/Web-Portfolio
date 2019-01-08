@@ -45,7 +45,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  background-color: white;
+  background: url('./assets/bg_prism.png');
   margin: 0;
 }
 #app {
@@ -59,6 +59,7 @@ body {
   text-align: center;
   color: #2c3e50;
   position: relative;
+  margin: 0;
   
 }
 #top {
@@ -66,9 +67,6 @@ body {
   background: url('./assets/background.svg') no-repeat;
   background-size: cover;
   padding-bottom: 200px;
-}
-svg {
-  //transform: rotate(180deg);
 }
 header {
   float: right;

@@ -64,6 +64,7 @@ body {
 }
 #top {
   min-height: 100vh;
+  width: 100vw;
   background: url('./assets/background.svg') no-repeat;
   background-size: cover;
   padding-bottom: 200px;

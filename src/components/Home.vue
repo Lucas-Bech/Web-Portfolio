@@ -10,10 +10,7 @@
 <script>
 
 export default {
-   name: 'Home',
-   created: function() {
-      this.$parent.$data.background_image = require('../assets/background.svg');
-   }
+   name: 'Home'
 }
 </script>
 
@@ -21,9 +18,9 @@ export default {
 <style lang="scss" scoped>
 
 #home {
-   position: relative;
-   left: 0;
-   top: 0;
+   position: absolute;
+   left: 0vh;
+   top: 0vw;
    #about {
       text-align: left;
       position: relative;

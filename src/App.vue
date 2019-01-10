@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <div id="top">
       <header>
         <nav>
           <router-link to="/Home">Home</router-link>
@@ -9,7 +8,6 @@
         </nav>
       </header>
       <router-view/>
-    </div>
     <footer>
       <a id="github-logo" href="https://github.com/Lucas-Bech">
         <img src="./assets/GitHub_logo.png" alt="https://github.com/Lucas-Bech">
@@ -21,7 +19,6 @@
 <script>
 export default {
   name: "app",
-  components: {}
 };
 </script>
 
@@ -43,48 +40,37 @@ $darkViolet: #22252C;
 
 html,
 body {
-  width: 100%;
-  height: 100%;
-  background: url('./assets/bg_prism.png');
+  width: 100vw;
+  height: 100vh;
   margin: 0;
+  overflow-x: hidden;
+  background: url('./assets/bg_prism.png') repeat;
 }
 #app {
-  min-height: 100%;
   display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "navbar"
+  "main"
+  "footer";
+  grid-template-columns: repeat(auto-fit, minmax(20vw, 100vw));  
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  position: relative;
   margin: 0;
-  
-}
-#top {
-  min-height: 100vh;
-  width: 100vw;
-  background: url('./assets/background.svg') no-repeat;
-  background-size: cover;
-  padding-bottom: 200px;
+  min-height: 100%;
 }
 header {
-  float: right;
-  padding: 20px;
-}
-footer {
+  grid-area: navbar;
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(3, 1fr);
+  right: 0;
+  top: 0;
   padding: 20px;
-  margin-top: 3em;
-  background-color: $sweetBlue;
-}
-nav {
+  
+  nav {
   position: relative;
-  left: -100px;
-  float: right;
+  right: 0vw;
   padding: 20px 20px 20px 0px;
   margin: 10px;
   a {
@@ -101,6 +87,16 @@ nav {
       transition: background .2s;
     }
   }
+}
+}
+footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  margin-top: 3em;
+  background-color: $sweetBlue;
 }
 #github-logo {
   img {

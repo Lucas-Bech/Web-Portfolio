@@ -1,5 +1,8 @@
 <template>
   <div id="dogFetcher">
+    <div>
+      <h1>Projects</h1>
+    </div>
     <div id="optionsContainer">
       <form id="fetchDog" @submit.prevent="fetchDog">
         <h2>Dog Filter</h2>
@@ -36,9 +39,6 @@ export default {
         "https://dog.ceo/api/breed/" + this.breed.api_value + "/images/random"
       );
     }
-  },
-  created: function() {
-    this.$parent.$data.background_image = '';
   },
   methods: {
     fetchDog() {
@@ -96,25 +96,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+h1 {
+  font-size: 10em;
+  text-align: center;
+}
 .container {
   margin: 0.5%;
 }
 #dogFetcher {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  background-color: #232323;
-  padding: 1em;
-  border-radius: 0.5em;
-  /*div {
-    background-color: #090d12;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-    border: 1px inset black;
-    margin: 1em;
-    border-radius: 0.5em;
-  }*/
+  grid-template-columns: repeat(auto-fit, minmax(100px, 500px));
 }
 #imageContainer {
   position: relative;
@@ -141,6 +133,7 @@ export default {
   background-repeat: no-repeat;
   max-width: 615px;
   max-height: 440px;
+  margin-left: 100px;
 
   form {
     position: relative;

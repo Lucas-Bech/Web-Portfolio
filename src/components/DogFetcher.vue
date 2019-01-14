@@ -105,8 +105,9 @@ h1 {
   margin: 0.5%;
 }
 #dogFetcher {
+  grid-area: main;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 500px));
+  grid-template-columns: 100vw minmax(10vw, 50vw) minmax(10vw, 50vw);
 }
 #imageContainer {
   position: relative;
@@ -183,5 +184,7 @@ v-option {
   cursor: pointer;
   background-color: #485761;
 }
-// #1A2930  #F7CE3E  #0A1612  #0F1626  #031424  #1A0315  #3C3C3C  #F9BE02  #192231  #494E6B  #414141  #22252C
+h1 {
+  color: $vividYellow;
+}
 </style>

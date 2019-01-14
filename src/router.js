@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './components/Home.vue'
+import Home from './views/Home.vue'
+import Projects from './views/Projects.vue'
 import DogFetcher from './components/DogFetcher.vue'
 import Skills from './components/Skills.vue'
 import CodeSignal from './components/CodeSignal.vue'
@@ -23,6 +24,11 @@ export default new Router({
             path: '/CodeSignal',
             name: 'codeSignal',
             component: CodeSignal
+        },
+        {
+            path: '/Projects',
+            name: "projects",
+            component: Projects
         },
         {
             path: '/DogFetcher',

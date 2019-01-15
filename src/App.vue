@@ -23,6 +23,7 @@ export default {
 @import url("https://cdn.jsdelivr.net/npm/animate.css@3.5.1");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 html,
 body {

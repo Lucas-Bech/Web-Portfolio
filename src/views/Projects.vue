@@ -1,6 +1,6 @@
 <template>
     <div id="projects">
-        <Card :data="obj" />
+        <Card v-for="project in projects" :key="project" :title="project.title"/>
     </div>
 </template>
 
@@ -13,21 +13,23 @@ export default {
     },
     data() {
         return {
-            obj: {
-                title: "test",
-                description: "desc",
-                image: "../assets/dog.jpg"
+            projects: [
+                {
+                title: "test"
+                //description: "desc",
+                //image: "../assets/dog.jpg"
             }
+            ]
         }
     }
 }
 </script>
 
 <style lang="scss" scoped>
-div {
+#projects {
     margin: 0 5vw 0 5vw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20vw, auto));
+    grid-template-columns: repeat(auto-fit, minmax(auto, 40vw));
     grid-template-rows: repeat(auto-fit, minmax(auto, 50vh));
     grid-gap: 10vh;
 }

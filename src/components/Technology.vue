@@ -1,17 +1,21 @@
 <template>
-    <span>Tech</span>
+    <a :href="technology.link" target="_blank">{{ technology.name }}</a>
 </template>
 
 <script>
 export default {
-    name: "Technology"
+    name: "Technology",
+    props: ['technology']
 }
 </script>
 
 <style lang="scss" scoped>
-span {
-    padding: .3em;
-    background-color: rgba(10, 10, 200, 0.5);
+a {
+    display: inline-block;
+    margin: auto 10px;
+    color: white;
+    padding: .4em .6em .4em .6em;
+    background-color: rgba(10, 10, 200, 1);
     border-radius: 2rem;
 }
 </style>

@@ -2,7 +2,6 @@
     <nav>
         <router-link to="/Home">Home</router-link>
         <router-link to="/Projects">Projects</router-link>
-        <router-link to="/Skills">Skills</router-link>
     </nav>
 </template>
 

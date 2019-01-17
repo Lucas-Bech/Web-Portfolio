@@ -1,15 +1,24 @@
 <template>
 <div id='home'>
    <div id="about">
-      <h1>Lucas Bech</h1>
-      <p>Data Technician Student</p>
+      <h1>{{ name }}</h1>
+      <span>{{ title }} </span>
+      <p>{{ about }}</p>
    </div>
 </div>
 </template>
 
 <script>
+import personData from '../data/person.json'
 export default {
-   name: 'Home'
+   name: 'Home',
+   data() {
+      return {
+         name: personData.name,
+         title: personData.title,
+         about: personData.about
+      }
+   }
 }
 </script>
 

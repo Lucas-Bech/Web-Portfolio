@@ -1,7 +1,4 @@
-# Portfolio
-
-
-## Project setup
+## Setup
 ```
 npm install
 ```
@@ -46,5 +43,3 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 # Dog Fetcher
 Webpage interface to the API: https://dog.ceo/dog-api/
-
-

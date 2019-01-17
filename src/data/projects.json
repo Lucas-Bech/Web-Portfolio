@@ -1,0 +1,64 @@
+{
+    "projects": 
+    [
+        {
+            "title": "Web-CV",
+            "description": "A web-CV",
+            "technologies": [
+                {
+                    "name": "Vue.js",
+                    "link": "https://vuejs.org/"
+                }
+            ],
+            "imageLinks": [
+                {
+                    "title": "GitHub Repository",
+                    "image": "octocat.png",
+                    "link": "https://github.com/Lucas-Bech/vue.js--setting-up--"
+                }
+            ]
+        },
+        {
+            "title": "Dog API Web-Interface",
+            "description": "Consumes API to filter & display images.",
+            "technologies": [
+                {
+                    "name": "JavaScript",
+                    "link": "https://www.javascript.com/"
+                },
+                {
+                    "name": "AJAX",
+                    "link": "https://en.wikipedia.org/wiki/Ajax_(programming)"
+                }
+            ],
+            "imageLinks": [
+                {
+                    "title": "GitHub Repository",
+                    "image": "octocat.png",
+                    "link": "https://github.com/Lucas-Bech/Dog-API-Interface"
+                }
+            ]
+        },
+        {
+            "title": "OpenGL Renderer",
+            "description": "Written in C++, it renders graphics.",
+            "technologies": [
+                {
+                    "name": "C++",
+                    "link": "https://en.wikipedia.org/wiki/C%2B%2B"
+                },
+                {
+                    "name": "OpenGL",
+                    "link": "https://www.opengl.org/"
+                }
+            ],
+            "imageLinks": [
+                {
+                    "title": "GitHub Repository",
+                    "image": "octocat.png",
+                    "link": "https://github.com/Lucas-Bech/OpenGL-Renderer--Setting-Up--"
+                }
+            ]
+        }
+    ]
+}

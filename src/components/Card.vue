@@ -1,5 +1,5 @@
 <template>
-    <div class="card">
+    <div class="card animated fadeInUp fast">
         <div id="title-bg">
             <h3>{{ project.title }}</h3>
         </div>
@@ -32,7 +32,6 @@ export default {
         "technologies links";
         grid-template-rows: 1fr .2fr;
         grid-template-columns: repeat(2, 1fr);
-        background: url('../assets/bg_prism.png');
         border: 2px solid black;
         width: 100%;
         height: 100%;

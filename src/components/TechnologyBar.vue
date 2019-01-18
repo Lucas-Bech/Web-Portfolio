@@ -1,6 +1,6 @@
 <template>
     <div id="technologybar">
-        <Technology v-for="technology in technologies" :key="technology" :technology="technology" />
+        <Technology v-for="technology in technologies" :key="technology.name" :technology="technology" />
     </div>
 </template>
 

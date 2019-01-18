@@ -1,6 +1,6 @@
 <template>
 <div id='home'>
-   <div id="about">
+   <div id="about" class="animated slideInLeft fast">
       <h1>{{ name }}</h1>
       <span>{{ title }} </span>
       <p>{{ about }}</p>

@@ -1,6 +1,6 @@
 <template>
     <ul>
-        <ImageLink v-for="imageLink in imageLinks" :key=imageLink :imageLink="imageLink"/>
+        <ImageLink v-for="imageLink in imageLinks" :key="imageLink.link" :imageLink="imageLink"/>
     </ul>
 </template>
 

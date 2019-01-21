@@ -1,5 +1,5 @@
 <template>
-<div id='home'>
+<div id='resume'>
    <div id="about" class="animated slideInLeft fast">
       <h1>{{ name }}</h1>
       <span>{{ title }} </span>
@@ -11,7 +11,7 @@
 <script>
 import personData from '../data/person.json'
 export default {
-   name: 'Home',
+   name: 'Resume',
    data() {
       return {
          name: personData.name,

@@ -24,11 +24,8 @@ export default {
     display: grid;
     grid-template-areas: "icon title navbar";
     grid-template-columns: minmax(20vw, 45vw);
-    width: 100%;
-    height: 100%;
+    height: auto;
     background: url('../assets/zigZagDark.png') repeat;
-    right: 0;
-    top: 0;
     padding: 20px;
     align-content: center;
 }

@@ -3,8 +3,17 @@
     [
         {
             "title": "Generic degree title",
+            "school": "Generic school",
+            "location": "Generic location",
             "enrollDate": "Enrolled date",
             "graduationDate": "Graduation date"
+        },
+        {
+            "title": "Generic degree title 2",
+            "school": "Generic school 2",
+            "location": "Generic location 2",
+            "enrollDate": "Enrolled date 2",
+            "graduationDate": "Graduation date 2"
         }
     ]
 }

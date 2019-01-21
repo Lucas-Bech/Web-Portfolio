@@ -6,18 +6,26 @@
     </footer>
 </template>
 
+<script>
+export default {
+  name: 'Footer'
+}
+</script>
+
+
 <style lang="scss" scoped>
 footer {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  background: url('../assets/blueHex.png');
   grid-area: footer;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(3, 1fr);
-  padding: 20px;
-  margin-top: 3em;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: url('../assets/blueHex.png');
   background-color: $sweetBlue;
+  a {
+    margin: 5px;
+  }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div id="projects">
+    <div id="portfolio">
         <Card v-for="project in projects" :key="project.title" :project="project"/>
     </div>
 </template>
@@ -8,7 +8,7 @@
 import Card from '../components/Card.vue'
 import projectsData from '../data/projects.json'
 export default {
-    name: 'Projects',
+    name: 'Portfolio',
     components: {
         Card
     },
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#projects {
+#portfolio {
     margin: 0 5vw 0 5vw;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(auto, 40vw));

@@ -16,7 +16,10 @@ export default {
 
 <style lang="scss" scoped>
 #about {
+    grid-area: main;
     display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(10vh, 50vh));
+    grid-template-rows: repeat(auto-fit, minmax(1fr, 1fr));
+    width: 100%;
+    height: 100%;
 }
 </style>

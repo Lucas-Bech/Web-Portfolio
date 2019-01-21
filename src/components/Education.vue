@@ -4,10 +4,10 @@
         <div id="degreeTable">
             <div class="degree" v-for="degree in degrees" :key="degree.graduationDate">
                 <h3>{{ degree.title }}</h3>
-                <span class="icon expandDown">
-                    <p>Enrolled {{ degree.enrollDate }}</p>
-                    <p>Graduating {{ degree.graduationDate }}</p>
-                </span>
+                <i class="icon expandDown">
+                    <!--<p>Enrolled {{ degree.enrollDate }}</p>
+                    <p>Graduating {{ degree.graduationDate }}</p>-->
+                </i>
             </div>
         </div>
     </div>
@@ -27,20 +27,35 @@ export default {
 
 <style lang="scss" scoped>
 #education {
-    background: whitesmoke;
-    max-width: 75vw;
+    background: white;
     margin: auto;
+    border-radius: 15% 15% 3% 3%;
     #degreeTable {
         display: grid;
-        grid-template-rows: repeat(auto-fit, minmax(5vh, 20vh));
-        #degree {
+        grid-template-rows: repeat(auto-fit, 1fr);
+        grid-row-gap: 1vh;
+        padding: 1vh;
+        border-radius: 2%;
+        margin: 10px;
+        background-color: blue;
+        .degree {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr .1fr;
+            grid-column-gap: .8em;
+            align-items: center;
+            margin: 0;
+            h3 {
+                margin: 0;
+            }
         }
     }
 }
 .icon.expandDown {
-  background: url('../assets/expandDown.png');
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url('../assets/expandDown.svg') no-repeat top left;
+    background-size: cover;
 }
 </style>
 

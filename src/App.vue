@@ -38,14 +38,12 @@ body {
   "header"
   "main"
   "footer";
-  grid-template-columns: repeat(auto-fit, minmax(20vw, 100vw)); 
-  grid-template-rows: 9vh 1000px 20px;
-  grid-row-gap: 20vh;
+  grid-template-rows: .1fr 1fr .1fr;
+  grid-row-gap: 10vh;
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   margin: 0;
   min-height: 100%;
 }

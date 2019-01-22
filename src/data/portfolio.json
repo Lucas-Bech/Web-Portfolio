@@ -59,6 +59,15 @@
                     "link": "https://github.com/Lucas-Bech/OpenGL-Renderer--Setting-Up--"
                 }
             ]
+        },
+        {
+            "title": "CodeSignal Solutions",
+            "technologies": [
+                {
+                    "name": "C++",
+                    "link": "https://en.wikipedia.org/wiki/C%2B%2B"
+                }
+            ]
         }
     ]
 }

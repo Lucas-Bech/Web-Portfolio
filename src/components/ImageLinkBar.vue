@@ -1,7 +1,7 @@
 <template>
-    <ul>
+    <div id="image-link-bar">
         <ImageLink v-for="imageLink in imageLinks" :key="imageLink.link" :imageLink="imageLink"/>
-    </ul>
+    </div>
 </template>
 
 <script>
@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-ul {
+#image-link-bar {
     grid-area: links;
     background-color: $brownGrey;
     height: 100%;

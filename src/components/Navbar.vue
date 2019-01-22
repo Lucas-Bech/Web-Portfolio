@@ -1,7 +1,6 @@
 <template>
-    <nav>
+    <nav id="nav-bar">
         <router-link to="/Home">Home</router-link>
-        
         <router-link to="/Portfolio">Portfolio</router-link>
         <router-link to="./About">About</router-link>
     </nav>
@@ -14,26 +13,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    nav {
+    #nav-bar {
       grid-area: navbar;
-      width: auto;
-      height: 100%;
-    a {
-      text-align: center;
-      padding: 10px;
-      text-decoration: none;
-      background: #4717f6;
-      border-radius: 3px;
-      color: #e7dfdd;
-      font-weight: bold;
-      margin: .9em;
-      &:hover {
-        background-color: #2700b3;
-        background: $vividYellow;
-        transition: background .2s;
-      }
-    }
+        a {
+          padding: 10px;
+          text-decoration: none;
+          background: #4717f6;
+          border-radius: 5%;
+          color: #e7dfdd;
+          font-weight: bold;
+          margin: .9em;
+          &:hover {
+            background-color: #110346;
+            transition: background .2s;
+          }
+        }
     }
 </style>
-
-

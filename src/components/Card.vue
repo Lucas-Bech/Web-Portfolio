@@ -1,5 +1,5 @@
 <template>
-    <div class="card animated fadeInUp fast">
+    <div class="card">
         <div id="title-bg">
             <h3>{{ project.title }}</h3>
         </div>

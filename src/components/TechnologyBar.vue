@@ -1,5 +1,5 @@
 <template>
-    <div id="technologybar">
+    <div id="technology-bar">
         <Technology v-for="technology in technologies" :key="technology.name" :technology="technology" />
     </div>
 </template>
@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#technologybar {
+#technology-bar {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10px, 120px));
     grid-column-gap: 10px;

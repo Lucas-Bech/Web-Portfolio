@@ -1,5 +1,5 @@
 <template>
-    <footer>
+    <footer id="footer">
       <a id="github-logo" href="https://github.com/Lucas-Bech">
         <img src="../assets/GitHub_logo.png" alt="https://github.com/Lucas-Bech">
       </a>
@@ -12,20 +12,14 @@ export default {
 }
 </script>
 
-
 <style lang="scss" scoped>
-footer {
+#footer {
   grid-area: footer;
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0vw, 1fr));
   align-items: center;
   width: 100%;
-  height: 100%;
-  background: url('../assets/blueHex.png');
-  background-color: $sweetBlue;
-  a {
-    margin: 5px;
-  }
+  height: auto;
+  background: url('../assets/darkHex.png');
 }
 </style>

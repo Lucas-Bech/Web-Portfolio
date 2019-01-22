@@ -1,9 +1,7 @@
 <template>
-    <li>
         <a :href="imageLink.link">
             <img :src="imageSrc" alt="Source code" :title="imageLink.title">
         </a>
-    </li>
 </template>
 
 <script>

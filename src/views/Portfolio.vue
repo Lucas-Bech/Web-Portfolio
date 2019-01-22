@@ -1,12 +1,12 @@
 <template>
-    <div id="portfolio">
+    <div id="portfolio" class="animated fadeInUp faster">
         <Card v-for="project in projects" :key="project.title" :project="project"/>
     </div>
 </template>
 
 <script>
 import Card from '../components/Card.vue'
-import projectsData from '../data/projects.json'
+import portfolioData from '../data/portfolio.json'
 export default {
     name: 'Portfolio',
     components: {
@@ -14,7 +14,7 @@ export default {
     },
     data() {
         return {
-            projects: projectsData.projects
+            projects: portfolioData.projects
         }
     }
 }

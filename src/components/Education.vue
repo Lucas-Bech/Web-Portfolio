@@ -4,10 +4,12 @@
         <div id="degreeTable">
             <div class="degree" v-for="degree in degrees" :key="degree.graduationDate">
                 <h3>{{ degree.title }}</h3>
-                <i class="icon expandDown">
+                <div class="expand">
+                    <i class="icon expandDown">
                     <!--<p>Enrolled {{ degree.enrollDate }}</p>
                     <p>Graduating {{ degree.graduationDate }}</p>-->
-                </i>
+                    </i>
+                </div>
             </div>
         </div>
     </div>
@@ -54,8 +56,21 @@ export default {
     width: 20px;
     height: 20px;
     display: inline-block;
+    margin: auto;
     background: url('../assets/expandDown.svg') no-repeat top left;
     background-size: cover;
+    -webkit-transition: width .2s; /* Safari */
+    transition: width .2s;
+    &:hover {
+        cursor: pointer;
+        height: 25px;
+        width: 25px;
+    }
+}
+.expand {
+    width: 30px;
+    height: 30px;
+    text-align: center;
 }
 </style>
 

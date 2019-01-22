@@ -1,5 +1,5 @@
 <template>
-    <a :href="technology.link" target="_blank">{{ technology.name }}</a>
+    <a :href="technology.link" rel="nofollow" target="_blank">{{ technology.name }}</a>
 </template>
 
 <script>

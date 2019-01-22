@@ -1,6 +1,6 @@
 <template>
 <div id='resume'>
-   <div id="about" class="animated slideInLeft fast">
+   <div id="about" class="animated fadeInLeft faster">
       <h1>{{ name }}</h1>
       <span>{{ title }} </span>
       <p>{{ about }}</p>

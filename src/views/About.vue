@@ -1,6 +1,7 @@
 <template>
-<div id="about" class="animated slideInRight fast">
+<div id="about" class="animated fadeInRight faster">
     <Education/>
+    <v-card/>
 </div>
 </template>
 

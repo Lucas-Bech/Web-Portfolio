@@ -1,8 +1,14 @@
 <template>
   <div id="app">
-      <Header/>
-      <router-view/>
-      <Footer/>
+    <v-app>
+        <Header/>
+      <v-content>
+        <v-container fluid>
+          <router-view/>
+        </v-container>
+      </v-content>
+        <Footer/>
+    </v-app>
   </div>
 </template>
 
@@ -21,8 +27,14 @@ export default {
 
 <style lang="scss">
 @import url("https://cdn.jsdelivr.net/npm/animate.css@3.5.1");
+@import url("https://use.fontawesome.com/releases/v5.6.3/css/all.css");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.grid-row-2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
 
 html,
 body {
@@ -32,10 +44,10 @@ body {
   overflow-x: hidden;
   background: url('./assets/darkPrism.png') repeat;
 }
-#app {
+app {
   display: grid;
   grid-template-areas: 
-  "header"
+  "."
   "main"
   "footer";
   grid-template-rows: .1fr 1fr .1fr;

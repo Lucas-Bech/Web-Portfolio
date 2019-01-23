@@ -1,7 +1,6 @@
 <template>
 <div id="about" class="animated fadeInRight faster">
-    <Education/>
-    <v-card/>
+    <Education/>ø
 </div>
 </template>
 

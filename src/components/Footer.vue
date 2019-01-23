@@ -1,25 +1,15 @@
 <template>
-    <footer id="footer">
-      <a id="github-logo" href="https://github.com/Lucas-Bech">
+  <v-Footer dark class="indigo">
+    <v-icon>mdi-github-circle</v-icon>
+    <v-icon>fas fa-edit</v-icon>
+    <v-icon>mdi-github-circle</v-icon>
+    <v-icon>mdi-tennis</v-icon>
+    <i class="material-icons">
+
+</i>
+  </v-Footer>
+    <!--
+"https://github.com/Lucas-Bech">
         <img src="../assets/GitHub_logo.png" alt="https://github.com/Lucas-Bech">
-      </a>
-    </footer>
+-->
 </template>
-
-<script>
-export default {
-  name: 'Footer'
-}
-</script>
-
-<style lang="scss" scoped>
-#footer {
-  grid-area: footer;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0vw, 1fr));
-  align-items: center;
-  width: 100%;
-  height: auto;
-  background: url('../assets/darkHex.png');
-}
-</style>

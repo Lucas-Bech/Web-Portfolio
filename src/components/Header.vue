@@ -1,28 +1,12 @@
 <template>
-    <header id="header">
-      <img src="../assets/favicon.svg">
-      <Navbar/>
-    </header>
+  <v-toolbar app dark class="indigo">
+    <v-toolbar-side-icon/>
+    <v-toolbar-title class="headline text-uppercase">My application</v-toolbar-title>
+    <v-spacer/>
+    <v-toolbar-items>
+      <v-btn flat to="/Resume">Resume</v-btn>
+      <v-btn flat to="/Portfolio">Portfolio</v-btn>
+      <v-btn flat to="/About">About</v-btn>
+    </v-toolbar-items>
+  </v-toolbar>
 </template>
-
-<script>
-import Navbar from './Navbar.vue'
-
-export default {
-  name: "Header",
-  components: {
-    Navbar
-  }
-}
-</script>
-
-<style lang="scss" scoped>
-  #header {
-    display: grid;
-    grid-template-areas: "icon title navbar";
-    grid-template-columns: minmax(20vw, 45vw);
-    background: url('../assets/zigZagDark.png') repeat;
-    padding: 20px;
-    align-content: center;
-}
-</style>

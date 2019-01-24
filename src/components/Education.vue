@@ -1,18 +1,19 @@
 <template>
-    <div id="education">
-        <h2>Education</h2>
-        <div id="degreeTable">
-            <div class="degree" v-for="degree in degrees" :key="degree.graduationDate">
-                <h3>{{ degree.title }}</h3>
-                <div class="expand">
-                    <i class="icon expandDown">
-                    <!--<p>Enrolled {{ degree.enrollDate }}</p>
-                    <p>Graduating {{ degree.graduationDate }}</p>-->
-                    </i>
+<v-container>
+    <v-flex xs12 sm6 md4 lg3 v-for="degree in degrees" :key="degree.graduationDate">
+        <v-card hover dark class="info ma-3">
+                <v-card-title class="justify-center title font-weight-bold" primary-title>
+                    {{ degree.title }}
+                </v-card-title>
+                <div class="subheading">{{ degree.school }}</div>
+            <v-card-text>
+                <div class="justify-center font-weight-thin">
+                    {{ degree.enrollDate }} - {{ degree.graduationDate }}
                 </div>
-            </div>
-        </div>
-    </div>
+            </v-card-text>
+        </v-card>
+    </v-flex>
+</v-container>
 </template>
 
 <script>

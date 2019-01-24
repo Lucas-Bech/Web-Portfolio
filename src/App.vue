@@ -2,7 +2,7 @@
   <div id="app">
     <v-app>
         <Header/>
-      <v-content>
+      <v-content id="main-content">
         <v-container fluid>
           <router-view/>
         </v-container>
@@ -36,6 +36,10 @@ export default {
   grid-template-rows: 1fr 1fr;
 }
 
+#main-content {
+  //background: url('./assets/background.svg') no-repeat;
+}
+
 html,
 body {
   width: 100vw;
@@ -44,20 +48,14 @@ body {
   overflow-x: hidden;
   background: url('./assets/darkPrism.png') repeat;
 }
-app {
-  display: grid;
-  grid-template-areas: 
-  "."
-  "main"
-  "footer";
-  grid-template-rows: .1fr 1fr .1fr;
-  grid-row-gap: 10vh;
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+#app {
+  //font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   margin: 0;
   min-height: 100%;
+  //background: url('./assets/greyPrism.png') repeat;
 }
 #github-logo {
   img {

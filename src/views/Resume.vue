@@ -22,9 +22,7 @@ export default {
 }
 </script>
 
-
 <style lang="scss" scoped>
-
 #home {
    grid-area: main;
    left: 0vh;
@@ -43,6 +41,5 @@ h1, p {
    color: $vividYellow;
    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-
 </style>
 

@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar app dark class="indigo">
+  <v-toolbar app dark class="primary">
     <v-toolbar-side-icon/>
     <v-toolbar-title class="headline text-uppercase">My application</v-toolbar-title>
     <v-spacer/>

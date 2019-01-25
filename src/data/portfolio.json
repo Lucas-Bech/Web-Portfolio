@@ -2,70 +2,82 @@
     "projects": 
     [
         {
-            "title": "Web-CV",
-            "description": "A web-CV",
-            "technologies": [
+            "title": "Busstop Tracker",
+            "description": "An app that tracks the timetables of busses to plan a route.",
+            "tags": 
+            [
                 {
-                    "name": "Vue.js",
-                    "link": "https://vuejs.org/"
-                }
-            ],
-            "imageLinks": [
+                    "name": "BusTimes",
+                    "link": "",
+                    "image": "",
+                    "icon": "code"
+                },
                 {
-                    "title": "GitHub Repository",
+                    "name": "GitHub Repository",
+                    "link": "https://github.com/Lucas-Bech/vue.js--setting-up--",
                     "image": "octocat.png",
-                    "link": "https://github.com/Lucas-Bech/vue.js--setting-up--"
+                    "icon": ""
                 }
             ]
         },
         {
-            "title": "Dog API Web-Interface",
-            "description": "Consumes API to filter & display images.",
-            "technologies": [
+            "title": "Flappy Bird AI",
+            "description": "A neural network that learns to play Flappy Bird",
+            "tags": [
                 {
                     "name": "JavaScript",
-                    "link": "https://www.javascript.com/"
+                    "link": "https://www.javascript.com/",
+                    "image": "",
+                    "icon": ""
                 },
                 {
                     "name": "AJAX",
-                    "link": "https://en.wikipedia.org/wiki/Ajax_(programming)"
-                }
-            ],
-            "imageLinks": [
+                    "link": "https://en.wikipedia.org/wiki/Ajax_(programming)",
+                    "image": "",
+                    "icon": ""
+                },
                 {
                     "title": "GitHub Repository",
+                    "link": "https://github.com/Lucas-Bech/Dog-API-Interface",
                     "image": "octocat.png",
-                    "link": "https://github.com/Lucas-Bech/Dog-API-Interface"
+                    "icon": ""
                 }
             ]
         },
         {
             "title": "OpenGL Renderer",
             "description": "Written in C++, it renders graphics.",
-            "technologies": [
+            "tags": [
                 {
                     "name": "C++",
-                    "link": "https://en.wikipedia.org/wiki/C%2B%2B"
+                    "link": "https://en.wikipedia.org/wiki/C%2B%2B",
+                    "image": "",
+                    "icon": ""
+                    
                 },
                 {
                     "name": "OpenGL",
-                    "link": "https://www.opengl.org/"
-                }
-            ],
-            "imageLinks": [
+                    "link": "https://www.opengl.org/",
+                    "image": "",
+                    "icon": ""
+                },
                 {
                     "title": "GitHub Repository",
+                    "link": "https://github.com/Lucas-Bech/OpenGL-Renderer--Setting-Up--",
                     "image": "octocat.png",
-                    "link": "https://github.com/Lucas-Bech/OpenGL-Renderer--Setting-Up--"
+                    "icon": ""
                 }
             ]
         },
         {
             "title": "CodeSignal Solutions",
-            "technologies": [
+            "description": "Solutions.",
+            "tags": [
                 {
                     "name": "C++",
-                    "link": "https://en.wikipedia.org/wiki/C%2B%2B"
+                    "link": "https://en.wikipedia.org/wiki/C%2B%2B",
+                    "image": "",
+                    "icon": ""
                 }
             ]
         }

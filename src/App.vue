@@ -31,31 +31,25 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-.grid-row-2 {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-}
-
 #main-content {
   //background: url('./assets/background.svg') no-repeat;
+  background-size: cover;
+  background: rgba(0, 0, 0, 0);
 }
-
 html,
 body {
   width: 100vw;
   height: 100vh;
   margin: 0;
   overflow-x: hidden;
-  background: url('./assets/darkPrism.png') repeat;
 }
 #app {
-  //font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   margin: 0;
   min-height: 100%;
-  //background: url('./assets/greyPrism.png') repeat;
+  background: url('./assets/darkPrism.png') repeat;
 }
 #github-logo {
   img {

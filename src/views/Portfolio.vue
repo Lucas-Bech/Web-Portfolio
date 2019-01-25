@@ -28,7 +28,5 @@ export default {
     grid-template-rows: repeat(auto-fit, minmax(auto, 50vh));
     grid-gap: 10vh;
 }
-h1 {
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
+
 </style>

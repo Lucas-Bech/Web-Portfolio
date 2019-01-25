@@ -10,7 +10,6 @@
         <input type="submit" value="Fetch Dog">
       </form>
     </div>
-
     <div id="imageContainer">
       <img v-bind:src="image" alt="The dog has gone missing">
     </div>

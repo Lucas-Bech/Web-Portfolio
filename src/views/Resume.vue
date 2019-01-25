@@ -1,11 +1,16 @@
 <template>
-<div id='resume'>
-   <div id="about" class="animated fadeInLeft faster">
-      <h1>{{ name }}</h1>
-      <span>{{ title }} </span>
-      <p>{{ about }}</p>
-   </div>
-</div>
+   <v-container>
+      <v-flex xs12 sm6 md4 lg3>
+            <v-card dark class="info ma-3">
+               <v-card-title class="justify-center title font-weight-bold 
+               animated fadeInLeft faster">{{ name }}</v-card-title>
+               <v-card-text>
+                  <p class="animated bounceInRight faster subheading">{{ title }} </p>
+                  <p class="animated bounceInUp faster">{{ description }}</p>
+               </v-card-text>
+            </v-card>            
+      </v-flex>
+   </v-container>
 </template>
 
 <script>
@@ -16,30 +21,9 @@ export default {
       return {
          name: personData.name,
          title: personData.title,
-         about: personData.about
+         description: personData.description
       }
    }
 }
 </script>
-
-<style lang="scss" scoped>
-#home {
-   grid-area: main;
-   left: 0vh;
-   top: 0vw;
-   #about {
-      text-align: left;
-      position: relative;
-      left: 15vw;
-      top: 25vh;
-      #name {
-         margin: 0;
-      }
-   }
-}
-h1, p {
-   color: $vividYellow;
-   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-</style>
 

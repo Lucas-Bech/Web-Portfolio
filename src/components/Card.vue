@@ -1,68 +1,47 @@
 <template>
-    <div class="card">
-        <div id="title-bg">
-            <h3>{{ project.title }}</h3>
-        </div>
-        <div id="description-bg">
+<v-flex>
+    <v-card dark class="info">
+        <v-card-title class="indigo justify-center title font-weight-bold">{{ project.title }}</v-card-title>
+        <v-card-text id="description">
             <p>{{ project.description }}</p>
-        </div>
-        <TechnologyBar :technologies="project.technologies" />
-        <ImageLinkBar :imageLinks="project.imageLinks" />
-    </div>
+        </v-card-text>
+        <v-card-actions class="indigo justify-center">
+            <div v-for="tag in project.tags" :key="tag.name" class="ml-3">
+                <v-btn round
+                 style="background-color: #2196F3" :href="tag.link" 
+                :title="tag.name">
+                    <img v-if="tag.image != ''" 
+                    :src="require('../assets/' + tag.image)" :alt="tag.name" />
+                    <v-icon v-else-if="tag.icon != ''">{{ tag.icon }}</v-icon>
+                    {{tag.name}}
+                </v-btn>
+            </div>
+        </v-card-actions>
+    </v-card>
+</v-flex>
 </template>
 
 <script>
-import TechnologyBar from './TechnologyBar.vue'
-import ImageLinkBar from './ImageLinkBar.vue'
 export default {
     name: 'Card',
     props: ['project'],
-    components: {
-        TechnologyBar,
-        ImageLinkBar
-    }
 }
 </script>
 
 <style lang="scss" scoped>
-    .card {
-        display: grid;
-        grid-template-areas: 
-        "title        description"
-        "technologies links";
-        grid-template-rows: 1fr .2fr;
-        grid-template-columns: repeat(2, 1fr);
-        border: 2px solid black;
-        width: 100%;
-        height: 100%;
-        
-    }
-    #title-bg {
-        background-color: $lightViolet;
-        width: 100%;
-        height: 100%;
-    }
-    #description-bg {
-        background-color: #1A2930;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-    }
-    h3 {
-        grid-area: title;
-        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-        text-justify: center;
-        text-align: center;
-        font-size: 3rem;
-        color: white;
-    }
-    p {
-        grid-area: description;
-        display: table-cell;
-        vertical-align: middle;
-        margin: 0 auto;
-        color: white;
-        font-size: 1.2rem;
-        padding: 10px;
-    }
+#description {
+    background: url('../assets/zigZagDark.png') repeat;
+}
+a {
+    display: inline-block;
+    margin: auto 10px;
+    color: white;
+    padding: .4em .6em .4em .6em;
+    background-color: rgba(10, 10, 200, 1);
+    border-radius: 2rem;
+    text-decoration: none;   
+}
+img {
+    max-height: 30px;
+}
 </style>

@@ -6,14 +6,14 @@
             <p>{{ project.description }}</p>
         </v-card-text>
         <v-card-actions class="indigo justify-center">
-            <div v-for="tag in project.tags" :key="tag.name" class="ml-3">
-                <v-btn round
-                 style="background-color: #2196F3" :href="tag.link" 
+            <div>
+                <v-btn v-for="tag in project.tags" :key="tag.name" class="ml-3 mt-2 mb-2" round
+                 style="background-color: #2196F3;" :href="tag.link" 
                 :title="tag.name">
                     <img v-if="tag.image != ''" 
                     :src="require('../assets/' + tag.image)" :alt="tag.name" />
                     <v-icon v-else-if="tag.icon != ''">{{ tag.icon }}</v-icon>
-                    {{tag.name}}
+                    <span>{{tag.name}}</span>
                 </v-btn>
             </div>
         </v-card-actions>
@@ -33,7 +33,6 @@ export default {
     background: url('../assets/zigZagDark.png') repeat;
 }
 a {
-    display: inline-block;
     margin: auto 10px;
     color: white;
     padding: .4em .6em .4em .6em;

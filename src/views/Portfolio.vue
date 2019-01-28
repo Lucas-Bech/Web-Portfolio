@@ -1,6 +1,8 @@
 <template>
-    <div id="portfolio" class="animated fadeInUp faster">
-        <Card v-for="project in projects" :key="project.title" :project="project"/>
+    <div id="portfolio">
+        <Card v-for="(project, index) in projects" :key="index" :project="project" 
+        :class="{ 'animated fadeInLeft': index % 2 === 0, 
+                  'animated fadeInRight': index % 2 !== 0 }"/>
     </div>
 </template>
 
@@ -25,7 +27,6 @@ export default {
     margin: 0 5vw 0 5vw;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(auto, 40vw));
-    grid-template-rows: repeat(auto-fit, minmax(auto, 50vh));
     grid-gap: 10vh;
 }
 

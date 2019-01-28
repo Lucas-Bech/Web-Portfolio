@@ -1,5 +1,5 @@
 <template>
-<div id="about" class="animated fadeInRight faster">
+<div id="about" class="animated fadeInLeft faster">
     <Education/>
 </div>
 </template>

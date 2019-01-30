@@ -1,15 +1,23 @@
 <template>
-<div id="about" class="animated fadeInLeft faster">
+<v-container id="about" class="animated fadeInLeft faster">
     <Education/>
-</div>
+    <PersonCard/>
+</v-container>
 </template>
 
 <script>
 import Education from '../components/Education.vue'
+import PersonCard from '../components/PersonCard'
 export default {
     name: 'About',
     components: {
-        Education
+        Education,
+        PersonCard
+    },
+    methods: {
+        getFile(value) {
+            console.log("get called with value: " + value)
+        }
     }
 }
 </script>

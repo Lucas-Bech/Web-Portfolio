@@ -26,8 +26,11 @@ export default {
 #portfolio {
     margin: 0 5vw 0 5vw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(auto, 40vw));
-    grid-gap: 10vh;
+    grid-gap: 8vh;
 }
-
+@media (min-width: 700px) {
+    #portfolio {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 </style>

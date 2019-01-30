@@ -2,18 +2,11 @@
     "degrees": 
     [
         {
-            "title": "Computer Science",
-            "school": "Mountlake University",
+            "title": "Data Technician (Specialty: Programming)",
+            "school": "Syddansk Erhvervsskole",
             "location": "Salt Lake City",
-            "enrollDate": "17. July, 1999",
-            "graduationDate": "22. June, 2004"
-        },
-        {
-            "title": "Software Engineering",
-            "school": "Silk Valley University",
-            "location": "Silk Valley",
-            "enrollDate": "11. February, 2006",
-            "graduationDate": "2. December, 2010"
+            "enrollDate": "2017",
+            "graduationDate": "2023"
         }
     ]
 }

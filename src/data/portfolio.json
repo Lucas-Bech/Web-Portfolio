@@ -2,27 +2,27 @@
     "projects": 
     [
         {
-            "title": "Busstop Tracker",
-            "description": "An app that tracks the timetables of busses to plan a route.",
+            "title": "Web Portfolio",
+            "description": "Customizable, responsive web portfolio",
             "tags": 
             [
                 {
-                    "name": "BusTimes",
-                    "link": "",
+                    "name": "Vue.js",
+                    "link": "https://vuejs.org/",
                     "image": "",
                     "icon": "code"
                 },
                 {
-                    "name": "GitHub Repository",
-                    "link": "https://github.com/Lucas-Bech/vue.js--setting-up--",
+                    "name": "Source",
+                    "link": "https://github.com/Lucas-Bech/Web-Portfolio",
                     "image": "octocat.png",
                     "icon": ""
                 }
             ]
         },
         {
-            "title": "Flappy Bird AI",
-            "description": "A neural network that learns to play Flappy Bird",
+            "title": "Dog API Web-Interface",
+            "description": "Consumes API to filter & display images",
             "tags": [
                 {
                     "name": "JavaScript",
@@ -37,7 +37,7 @@
                     "icon": ""
                 },
                 {
-                    "title": "GitHub Repository",
+                    "name": "Source Code",
                     "link": "https://github.com/Lucas-Bech/Dog-API-Interface",
                     "image": "octocat.png",
                     "icon": ""
@@ -45,7 +45,7 @@
             ]
         },
         {
-            "title": "OpenGL Renderer",
+            "title": "[Building] OpenGL Renderer",
             "description": "Written in C++, it renders graphics.",
             "tags": [
                 {
@@ -62,7 +62,7 @@
                     "icon": ""
                 },
                 {
-                    "title": "GitHub Repository",
+                    "name": "Source",
                     "link": "https://github.com/Lucas-Bech/OpenGL-Renderer--Setting-Up--",
                     "image": "octocat.png",
                     "icon": ""
@@ -71,12 +71,18 @@
         },
         {
             "title": "CodeSignal Solutions",
-            "description": "Solutions.",
+            "description": "CodeSignal (formerly CodeFights) is a skills-based assessment platform whose mission is to discover, develop and promote technical talent.",
             "tags": [
                 {
                     "name": "C++",
                     "link": "https://en.wikipedia.org/wiki/C%2B%2B",
                     "image": "",
+                    "icon": ""
+                },
+                {
+                    "name": "Source Code",
+                    "link": "https://github.com/Lucas-Bech/CodeSignal-Solutions",
+                    "image": "octocat.png",
                     "icon": ""
                 }
             ]

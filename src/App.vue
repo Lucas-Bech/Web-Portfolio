@@ -1,6 +1,5 @@
 <template>
-  <div id="app">
-    <v-app>
+    <v-app v-cloak>
         <Header/>
       <v-content id="main-content">
         <v-container fluid>
@@ -9,7 +8,6 @@
       </v-content>
         <Footer/>
     </v-app>
-  </div>
 </template>
 
 <script>
@@ -31,10 +29,8 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-#main-content {
-  //background: url('./assets/background.svg') no-repeat;
-  background-size: cover;
-  background: rgba(0, 0, 0, 0);
+[v-cloak] {
+  display: none !important;
 }
 html,
 body {
@@ -47,16 +43,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  margin: 0;
-  min-height: 100%;
   background: url('./assets/darkPrism.png') repeat;
 }
-#github-logo {
-  img {
-    height: auto;
-    width: 15%;
-    background-color: #192231;
-    float: left;
-  }
-}                     
 </style>

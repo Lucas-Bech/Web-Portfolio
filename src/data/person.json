@@ -1,6 +1,7 @@
 {
     "name": "Lucas Bech",
-    "title": "Coder",
-    "description": "Passionate coder and aspiring software developer studying at Syddansk Erhvervsskole specializing in programming and an aspiring software developer",
-    "age": 18
+    "vocation": "Software Development",
+    "description": "Passionate coder and aspiring software developer studying at Syddansk Erhvervsskole.",
+    "age": 18,
+    "email": "labvs1235@gmail.com"
 }

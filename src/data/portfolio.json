@@ -3,69 +3,93 @@
     [
         {
             "title": "Web Portfolio",
-            "description": "Customizable, responsive web portfolio",
+            "description": "Customizable, mobile-first, responsive web portfolio with separation of code and data. Built with Vue & Vuetify",
             "tags": 
             [
                 {
+                    "name": "HTML5",
+                    "link": "https://en.wikipedia.org/wiki/HTML5",
+                    "icon_origin": "fab",
+                    "icon": "html5"
+                },
+                {
+                    "name": "JavaScript",
+                    "link": "https://www.javascript.com/",
+                    "icon_origin": "fab",
+                    "icon": "js-square"
+                },
+                {
                     "name": "Vue.js",
                     "link": "https://vuejs.org/",
-                    "image": "",
-                    "icon": "code"
+                    "icon_origin": "fab",
+                    "icon": "vuejs"
                 },
                 {
                     "name": "Source",
                     "link": "https://github.com/Lucas-Bech/Web-Portfolio",
-                    "image": "octocat.png",
-                    "icon": ""
+                    "icon_origin": "assets",
+                    "icon": "octocat.png"
                 }
             ]
         },
         {
             "title": "Dog API Web-Interface",
-            "description": "Consumes API to filter & display images",
+            "description": "Consumes an API using AJAX. This API serves images of dogs of a plethora of breeds. Allows for selection of a specific breed.",
             "tags": [
                 {
                     "name": "JavaScript",
                     "link": "https://www.javascript.com/",
-                    "image": "",
-                    "icon": ""
+                    "icon_origin": "fab",
+                    "icon": "js-square"
                 },
                 {
                     "name": "AJAX",
                     "link": "https://en.wikipedia.org/wiki/Ajax_(programming)",
-                    "image": "",
-                    "icon": ""
+                    "icon_origin": "mdi",
+                    "icon": "code"
                 },
                 {
                     "name": "Source Code",
                     "link": "https://github.com/Lucas-Bech/Dog-API-Interface",
-                    "image": "octocat.png",
-                    "icon": ""
+                    "icon_origin": "assets",
+                    "icon": "octocat.png"
                 }
             ]
         },
         {
             "title": "[Building] OpenGL Renderer",
-            "description": "Written in C++, it renders graphics.",
+            "description": "[Currently Building] A graphics renderer built with OpenGL API. It uses the lightweight utility, GLFW, for cross-platform handling of windows, OpenGL contexts and handle input. Main programming language: C++.",
             "tags": [
                 {
                     "name": "C++",
                     "link": "https://en.wikipedia.org/wiki/C%2B%2B",
-                    "image": "",
-                    "icon": ""
+                    "icon_origin": "mdi",
+                    "icon": "code"
                     
                 },
                 {
                     "name": "OpenGL",
                     "link": "https://www.opengl.org/",
-                    "image": "",
-                    "icon": ""
+                    "icon_origin": "mdi",
+                    "icon": "code"
+                },
+                {
+                    "name": "GLFW",
+                    "link": "https://www.glfw.org/",
+                    "icon_origin": "fas",
+                    "icon": "box-open"
+                },
+                {
+                    "name": "GLEW",
+                    "link": "http://glew.sourceforge.net/",
+                    "icon_origin": "fas",
+                    "icon": "box-open"
                 },
                 {
                     "name": "Source",
                     "link": "https://github.com/Lucas-Bech/OpenGL-Renderer--Setting-Up--",
-                    "image": "octocat.png",
-                    "icon": ""
+                    "icon_origin": "assets",
+                    "icon": "octocat.png"
                 }
             ]
         },
@@ -76,14 +100,14 @@
                 {
                     "name": "C++",
                     "link": "https://en.wikipedia.org/wiki/C%2B%2B",
-                    "image": "",
-                    "icon": ""
+                    "icon_origin": "mdi",
+                    "icon": "code"
                 },
                 {
                     "name": "Source Code",
                     "link": "https://github.com/Lucas-Bech/CodeSignal-Solutions",
-                    "image": "octocat.png",
-                    "icon": ""
+                    "icon_origin": "assets",
+                    "icon": "octocat.png"
                 }
             ]
         }

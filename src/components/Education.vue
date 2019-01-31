@@ -1,6 +1,6 @@
 <template>
 <v-container>
-        <v-flex blue darken-3 id="education" xs12 sm6 md4 lg3>
+        <v-flex blue darken-3 id="education" xs12 sm6 md6 lg4>
             <h1 id="education-title" class="white--text blue darken-3 pt-1 pb-1">Education</h1>
             <v-card v-for="degree in degrees" :key="degree.graduationDate" dark class="blue-gradient ma-3">
                     <v-card-title class="justify-center title font-weight-bold" primary-title>
@@ -39,6 +39,6 @@ export default {
     border-radius: 1%;
 }
 .blue-gradient {
-    background-image: linear-gradient( 135deg, rgb(0, 111, 214) 10%, rgb(0, 58, 194) 100%);
+    background-image: linear-gradient( 135deg, rgb(6, 131, 248) 10%, rgb(0, 58, 194) 100%);
 }
 </style>

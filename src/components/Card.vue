@@ -8,7 +8,7 @@
         <v-card-actions class="grad-blue-ldl">
             <v-flex>
                 <v-btn v-for="tag in tags" :key="tag.name" 
-                round left class="grad-blue-dl ml-3 mt-2 mb-2 pr-2 mr-2"  
+                round left class="grad-blue-dl mt-2 mb-2 pr-2 mr-3"  
                 :href="tag.link" target="_blank" rel="noopener noreferrer"
                 :title="tag.name">
                     <v-icon v-if="tag.icon_origin === 'mdi'" class="mr-1">{{ tag.icon }}</v-icon>
@@ -50,7 +50,7 @@ export default {
     background: url('../assets/zigZagDark.png') repeat;
 }
 img {
-    max-height: 30px;
+    height: 1.6em;
 }
 p {
     line-height: 2.0;

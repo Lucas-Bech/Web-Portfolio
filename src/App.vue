@@ -1,24 +1,24 @@
 <template>
     <v-app v-cloak>
-        <Header/>
+        <TheHeader/>
       <v-content id="main-content">
         <v-container fluid>
           <router-view/>
         </v-container>
       </v-content>
-        <Footer/>
+        <TheFooter/>
     </v-app>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Footer from './components/Footer.vue'
+import TheHeader from './components/TheHeader.vue'
+import TheFooter from './components/TheFooter.vue'
 
 export default {
   name: "app",
   components: {
-    Header,
-    Footer
+    TheHeader,
+    TheFooter
   }
 };
 </script>

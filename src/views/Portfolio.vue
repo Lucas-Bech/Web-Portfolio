@@ -24,9 +24,8 @@ export default {
 
 <style lang="scss" scoped>
 #portfolio {
-    //margin: 0 5vw 0 5vw;
     display: grid;
-    grid-gap: 8vh;
+    grid-gap: 4vh;
 }
 @media (min-width: 700px) {
     #portfolio {

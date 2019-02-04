@@ -1,7 +1,6 @@
 <template>
 <v-container id="about" class="animated fadeInLeft faster">
     <Education/>
-    <PersonCard/>
 </v-container>
 </template>
 

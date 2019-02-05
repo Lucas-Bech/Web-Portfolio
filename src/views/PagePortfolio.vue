@@ -1,18 +1,19 @@
 <template>
     <div id="portfolio">
-        <Card v-for="(project, index) in projects" :key="index" :project="project" 
+        <PortfolioProject v-for="(project, index) in projects" :key="index" :project="project" 
         :class="{ 'animated fadeInLeft': index % 2 === 0, 
-                  'animated fadeInRight': index % 2 !== 0 }"/>
+                  'animated fadeInRight': index % 2 !== 0 }">
+        </PortfolioProject>
     </div>
 </template>
 
 <script>
-import Card from '../components/Card.vue'
+import PortfolioProject from '../components/PortfolioProject.vue'
 import portfolioData from '../data/portfolio.json'
 export default {
-    name: 'Portfolio',
+    name: 'PagePortfolio',
     components: {
-        Card
+        PortfolioProject
     },
     data() {
         return {

@@ -12,7 +12,7 @@
 
 <script>
 export default {
-    name: "Documents",
+    name: "PersonDocuments",
     data() {
         return {
             documents: './cv.txt'

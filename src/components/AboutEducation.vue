@@ -1,5 +1,5 @@
 <template>
-        <v-flex blue darken-3 id="education" xs12 sm6 md6 lg4>
+        <v-flex blue darken-3 id="education" xs12 sm8 md6 lg5>
             <h1 id="education-title" class="white--text blue darken-3 pt-1 pb-1">Education</h1>
             <v-card v-for="degree in degrees" :key="degree.graduationDate" dark class="blue-gradient ma-3">
                     <v-card-title class="justify-center title font-weight-bold" primary-title>
@@ -18,7 +18,7 @@
 <script>
 import educationData from '../data/education.json'
 export default {
-    name: 'Education',
+    name: 'AboutEducation',
     data() {
         return {
             degrees: educationData.degrees,

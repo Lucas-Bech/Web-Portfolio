@@ -27,7 +27,7 @@
 <script>
 import personData from '../data/person.json'
 export default {
-   name: 'Home',
+   name: 'PageHome',
    data() {
       return {
          name: personData.name,

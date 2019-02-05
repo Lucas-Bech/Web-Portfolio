@@ -25,7 +25,7 @@
 
 <script>
 export default {
-    name: 'Card',
+    name: 'PortfolioProject',
     props: ['project'],
     data() {
         return {

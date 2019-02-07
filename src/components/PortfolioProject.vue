@@ -26,7 +26,12 @@
 <script>
 export default {
     name: 'PortfolioProject',
-    props: ['project'],
+    props: {
+        project: {
+            type: Object,
+            required: true
+        }
+    },
     data() {
         return {
             title: this.project.title,

@@ -1,14 +1,25 @@
 <template>
-<v-layout justify-space-around>
+<v-layout justify-space-around wrap align-center>
+    <!-- Mail
+    <v-flex class="white">
+        <v-form action="" method="POST" enctype="text/plain">
+            <label>Name</label>
+            <input type="text" name="Sender" required>
+            
+            <input type="submit" value="Send">
+        </v-form>
+    </v-flex>
+    -->
     <AboutEducation class="animated fadeInLeft faster"></AboutEducation>
-    <v-flex id="test">
+    <v-flex xs12 sm12 md6 lg6 class="mt-4 ml-2">
         <v-card dark class="animated fadeInRight faster">
             <v-card-title class="grad-blue-ldl justify-center title font-weight-bold">{{ name }}</v-card-title>
             <v-card-text class="about-desc">
-                <p>{{ about }}</p>
+                <p>{{ about }} If you think I'd be a fit for your company</p>
+                <h3>Contact me at </h3>
+                <a :href="'mailto:' + email">{{ email }}</a>
             </v-card-text>
             <v-card-actions class="grad-blue-ldl">
-                <v-flex>
                     <v-btn v-for="tag in tags" :key="tag.name" 
                     round left class="grad-blue-dl mt-2 mb-2 pr-2 mr-3"  
                     :href="tag.link" target="_blank" rel="noopener noreferrer"
@@ -19,7 +30,6 @@
                         :src="require('../assets/' + tag.icon)" :alt="tag.name" />
                         {{tag.name}}
                     </v-btn>
-                </v-flex>
             </v-card-actions>
         </v-card>
     </v-flex>
@@ -28,13 +38,12 @@
 
 <script>
 import AboutEducation from '../components/AboutEducation.vue'
-import PersonCard from '../components/PersonCard'
 import personData from '../data/person.json'
+
 export default {
     name: 'PageAbout',
     components: {
-        AboutEducation,
-        PersonCard
+        AboutEducation
     },
     data() {
         return {
@@ -46,8 +55,8 @@ export default {
         }
     },
     methods: {
-        getFile(value) {
-            console.log("get called with value: " + value)
+        getFile(/*file_to_get*/) {
+            // Consume API to fetch files
         }
     }
 }

@@ -1,18 +1,18 @@
 <template>
-        <v-flex blue darken-3 id="education" xs12 sm8 md6 lg5>
-            <h1 id="education-title" class="white--text blue darken-3 pt-1 pb-1">Education</h1>
-            <v-card v-for="degree in degrees" :key="degree.graduationDate" dark class="blue-gradient ma-3">
-                    <v-card-title class="justify-center title font-weight-bold" primary-title>
-                        {{ degree.title }}
-                    </v-card-title>
-                    <div class="subheading">{{ degree.school }}</div>
-                <v-card-text>
-                    <div class="justify-center font-weight-thin">
-                        {{ degree.enrollDate }} - {{ degree.graduationDate }}
-                    </div>
-                </v-card-text>
-            </v-card>
-        </v-flex>
+<v-flex blue darken-3 id="education" xs12 sm12 md5 lg5>
+    <h1 id="education-title" class="white--text blue darken-3 pt-1 pb-1">Education</h1>
+    <v-card v-for="degree in degrees" :key="degree.graduationDate" dark class="blue-gradient ma-3">
+            <v-card-title class="justify-center title font-weight-bold" primary-title>
+                {{ degree.title }}
+            </v-card-title>
+            <div class="subheading">{{ degree.school }}</div>
+        <v-card-text>
+            <div class="justify-center font-weight-thin">
+                {{ degree.enrollDate }} - {{ degree.graduationDate }}
+            </div>
+        </v-card-text>
+    </v-card>
+</v-flex>
 </template>
 
 <script>
@@ -38,10 +38,5 @@ export default {
 }
 .blue-gradient {
     background-image: linear-gradient( 135deg, rgb(6, 131, 248) 10%, rgb(0, 58, 194) 100%);
-}
-@media (min-width: 600px) {
-    #education {
-        
-    }
 }
 </style>

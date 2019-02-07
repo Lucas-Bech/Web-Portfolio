@@ -1,7 +1,5 @@
 module.exports = {
-  baseUrl: process.env.NODE_ENV === 'production'
-  ? '/Web-Portfolio/'
-  : '/',
+  baseUrl: 'Web-Portfolio',
     css: {
       loaderOptions: {
         sass: {

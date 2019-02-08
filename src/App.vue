@@ -34,12 +34,17 @@ export default {
 }
 html,
 body {
-  width: 100vw;
-  height: 100vh;
+  position: fixed; // Disables overscrolling rubber-banding on mobile devices
+  height: 100%;
   margin: 0;
   overflow-x: hidden;
+  background: url('./assets/darkPrism.png') repeat;
+}
+#main-content {
+  width: 100vw;
 }
 #app {
+  height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

@@ -11,7 +11,7 @@
     </v-flex>
     -->
     <AboutEducation class="animated fadeInLeft faster"></AboutEducation>
-    <v-flex xs12 sm12 md6 lg6 class="mt-4 ml-2">
+    <v-flex xs12 sm12 md6 lg6 class="mt-4 ma-2 mr-3">
         <v-card dark class="animated fadeInRight faster">
             <v-card-title class="grad-blue-ldl justify-center title font-weight-bold">{{ name }}</v-card-title>
             <v-card-text class="about-desc">
@@ -20,6 +20,7 @@
                 <a :href="'mailto:' + email">{{ email }}</a>
             </v-card-text>
             <v-card-actions class="grad-blue-ldl">
+                <v-flex>
                     <v-btn v-for="tag in tags" :key="tag.name" 
                     round left class="grad-blue-dl mt-2 mb-2 pr-2 mr-3"  
                     :href="tag.link" target="_blank" rel="noopener noreferrer"
@@ -30,6 +31,7 @@
                         :src="require('../assets/' + tag.icon)" :alt="tag.name" />
                         {{tag.name}}
                     </v-btn>
+                </v-flex>
             </v-card-actions>
         </v-card>
     </v-flex>
@@ -51,13 +53,24 @@ export default {
             vocation: personData.vocation,
             description: personData.description,
             email: personData.email,
-            about: personData.about
+            about: personData.about,
+            tags: personData.tags
         }
     },
     methods: {
+        
         getFile(/*file_to_get*/) {
             // Consume API to fetch files
+        },
+        
+        get_fa_class(fa_type, fa_icon) {
+            return fa_type + ' fa-' + fa_icon
+        },
+        
+        is_fa(icon_origin) {
+            return icon_origin === 'fas' || icon_origin === 'fab'
         }
+    
     }
 }
 </script>
@@ -72,5 +85,8 @@ p {
 }
 #test {
     border: 1px outset blue;
+}
+img {
+    height: 1.6em;
 }
 </style>

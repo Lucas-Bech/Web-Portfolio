@@ -1,8 +1,8 @@
 <template>
-<v-flex>
-    <v-card dark>
+<v-flex xs12 sm12 md12 lg6>
+    <v-card class="ma-3" dark>
         <v-card-title class="grad-blue-ldl justify-center title font-weight-bold">{{ title }}</v-card-title>
-        <v-card-text class="description">
+        <v-card-text class="description pa-4">
             <p>{{ description }}</p>
         </v-card-text>
         <v-card-actions class="grad-blue-ldl">

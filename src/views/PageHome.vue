@@ -1,6 +1,6 @@
 <template>
-   <v-container>
-      <v-flex xs12 sm8 md6 lg5 id="card-container" class="animated fadeInLeft">
+   <v-layout justify-center>
+      <v-flex xs12 sm12 md8 lg6 id="" class="animated fadeInLeft mr-3">
          <v-card dark id="personal-card">
             <v-card-title class="grad-blue-ldl justify-center headline font-weight-bold">{{ name }}</v-card-title>
             <v-card-text>
@@ -21,7 +21,7 @@
             </v-card-actions>
          </v-card>
       </v-flex>
-   </v-container>
+   </v-layout>
 </template>
 
 <script>

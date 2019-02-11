@@ -1,7 +1,13 @@
 <template>
-<v-flex blue darken-3 id="education" xs12 sm12 md5 lg5>
-    <h1 id="education-title" class="white--text blue darken-3 pt-1 pb-1">Education</h1>
-    <v-card v-for="degree in degrees" :key="degree.graduationDate" dark class="blue-gradient ma-3">
+<v-flex color="" id="education" class="grad-blue-ldl" xs12 sm12 md5 lg12>
+    <!--<h1 id="education-title" class="white--text pt-1 pb-1">Education</h1>-->
+    <v-card 
+    flat 
+    color="rgba(0,0,0,0)" 
+    v-for="degree in degrees" 
+    :key="degree.graduationDate" 
+    dark 
+    class="ma-3">
             <v-card-title class="justify-center title font-weight-bold" primary-title>
                 {{ degree.title }}
             </v-card-title>
@@ -29,14 +35,13 @@ export default {
 
 <style lang="scss" scoped>
 #education {
-    border: 1px outset black;
-    background: url('../assets/zigZagDark.png') repeat;
+    //border: 1px outset black;
     border-radius: 1%;
 }
 #education-title {
     border-radius: 1%;
 }
 .blue-gradient {
-    background-image: linear-gradient( 135deg, rgb(6, 131, 248) 10%, rgb(0, 58, 194) 100%);
+    //background-image: linear-gradient( 135deg, rgb(6, 131, 248) 10%, rgb(0, 58, 194) 100%);
 }
 </style>

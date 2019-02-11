@@ -1,21 +1,10 @@
 <template>
-<v-layout justify-space-around wrap align-center>
-    <!-- Mail
-    <v-flex class="white">
-        <v-form action="" method="POST" enctype="text/plain">
-            <label>Name</label>
-            <input type="text" name="Sender" required>
-            
-            <input type="submit" value="Send">
-        </v-form>
-    </v-flex>
-    -->
-    <AboutEducation class="animated fadeInLeft faster"></AboutEducation>
-    <v-flex xs12 sm12 md6 lg6 class="mt-4 ma-2 mr-3">
+<v-layout justify-space-around column nowrap align-center id="about-layout">
+    <v-flex xs12 sm12 md12 lg12 class="mt-4 ma-2 mr-3">
         <v-card dark class="animated fadeInRight faster">
             <v-card-title class="grad-blue-ldl justify-center title font-weight-bold">{{ name }}</v-card-title>
             <v-card-text class="about-desc">
-                <p>{{ about }} If you think I'd be a fit for your company</p>
+                <p>{{ about }}</p>
                 <h3>Contact me at </h3>
                 <a :href="'mailto:' + email">{{ email }}</a>
             </v-card-text>
@@ -35,6 +24,7 @@
             </v-card-actions>
         </v-card>
     </v-flex>
+    <AboutEducation class="animated fadeInLeft faster"></AboutEducation>
 </v-layout>
 </template>
 
@@ -76,6 +66,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#about-layout > * {
+    margin-bottom: .7em;
+}
 p {
     line-height: 2.0;
     margin: 5px 25px;

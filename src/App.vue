@@ -1,12 +1,12 @@
 <template>
     <v-app v-cloak>
-        <TheHeader/>
-      <v-content id="main-content">
-        <v-container fluid>
-          <router-view/>
+        <TheHeader></TheHeader>
+      <v-content>
+        <v-container fluid fill-height id="main-container">
+          <router-view></router-view>
         </v-container>
       </v-content>
-        <TheFooter/>
+        <TheFooter></TheFooter>
     </v-app>
 </template>
 
@@ -35,13 +35,14 @@ export default {
 html,
 body {
   position: fixed; // Disables overscrolling rubber-banding on mobile devices
+  width: 100%;
   height: 100%;
   margin: 0;
   overflow-x: hidden;
   background: url('./assets/darkPrism.png') repeat;
 }
-#main-content {
-  width: 100vw;
+#main-container {
+  //height: 100%;
 }
 #app {
   height: 100vh;

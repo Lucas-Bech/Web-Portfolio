@@ -1,10 +1,10 @@
 <template>
-    <v-layout justify-space-around wrap align-center>
-        <PortfolioProject v-for="(project, index) in projects" :key="index" :project="project" 
-        :class="{ 'animated fadeInLeft': index % 2 === 0, 
-                  'animated fadeInRight': index % 2 !== 0 }">
-        </PortfolioProject>
-    </v-layout>
+<v-layout justify-space-around wrap align-center>
+    <PortfolioProject v-for="(project, index) in projects" :key="index" :project="project" 
+    :class="{ 'animated fadeInLeft': index % 2 === 0, 
+              'animated fadeInRight': index % 2 !== 0 }">
+    </PortfolioProject>
+</v-layout>
 </template>
 
 <script>

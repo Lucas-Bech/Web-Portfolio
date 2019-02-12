@@ -1,7 +1,7 @@
 <template>
   <v-toolbar app dark id="the-header" class="primary animated slideInLeft">
-    <v-toolbar-side-icon/>
-    <v-toolbar-title class="headline text-uppercase">My application</v-toolbar-title>
+    <!--<v-toolbar-side-icon></v-toolbar-side-icon>-->
+    <v-toolbar-title class="headline">Online Portfolio - Lucas Bech</v-toolbar-title>
     <v-spacer/>
     <v-toolbar-items>
       <v-btn flat to="/Home">Home</v-btn>

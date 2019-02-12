@@ -1,10 +1,30 @@
 {
     "name": "Lucas Bech",
     "vocation": "Software Development",
+    "aspiration": "Software Developer",
+    "interests":
+    [
+        "Science, Philosophy, Technology"
+    ],
+    "degrees": 
+    [
+        {
+            "title": "Data Technician Specializing in Programming",
+            "description": "Learning about servers, services, programming as well as other various useful tools for software development",
+            "school": "Syddansk Erhvervsskole",
+            "location": "Odense, Denmark",
+            "enrollDate": "August 2017",
+            "graduationDate": "June 2023"
+        }
+    ],
     "description": "Passionate coder and aspiring software developer studying at Syddansk Erhvervsskole.",
     "age": 18,
     "email": "Lucas.Bech.Tech@gmail.com",
-    "about": "My name is Lucas Bech, I'm 18 years old and a EUX data technician student at Syddansk Erhvervsskole in Odense, Denmark. Here I learn about servers, services, programming as well as other various useful tools for software development. At this time, I'm looking for an internship where I can put theory into practice and get real working experience. Naturally, I enjoy programming in my spare time - my other interests include science, philosophy and technology. I'm currently learning Vue.js and OpenGL.",
+    "email-icon": {
+        "icon_origin": "fas",
+        "icon": "envelope"
+    },
+    "about": "I'm an immensely curious person who spends a significant amount of time learning. In particular, I enjoy exploring software development and coding. I have great passion for software development and I love a good challenge. I'm always looking for new and innovative ways to improve. At this time, I'm looking for an internship where I can achieve real working experience.",
     "tags":
     [
         {
@@ -20,6 +40,12 @@
             "icon": "js-square"
         },
         {
+            "name": "AJAX",
+            "link": "https://en.wikipedia.org/wiki/Ajax_(programming)",
+            "icon_origin": "mdi",
+            "icon": "code"
+        },
+        {
             "name": "Vue.js",
             "link": "https://vuejs.org/",
             "icon_origin": "fab",
@@ -32,10 +58,58 @@
             "icon": "vuetify.svg"
         },
         {
-            "name": "Source Code",
-            "link": "https://github.com/Lucas-Bech/Web-Portfolio",
-            "icon_origin": "assets",
-            "icon": "octocat.png"
+            "name": "Python",
+            "link": "",
+            "icon_origin": "mdi",
+            "icon": "code"
+        },
+        {
+            "name": "C++",
+            "link": "https://en.wikipedia.org/wiki/C%2B%2B",
+            "icon_origin": "mdi",
+            "icon": "code"
+        },
+        {
+            "name": "Git",
+            "link": "https://git-scm.com/",
+            "icon_origin": "fas",
+            "icon": "code-branch"
+        },
+        {
+            "name": "Low Level Functionality",
+            "link": "",
+            "icon_origin": "mdi",
+            "icon": "memory"
+        },
+        {
+            "name": "Windows Client/Server",
+            "link": "",
+            "icon_origin": "fab",
+            "icon": "windows"
+        },
+        {
+            "name": "Linux Client/Server",
+            "link": "",
+            "icon_origin": "fab",
+            "icon": "linux"
+        },
+        {
+            "name": "SQL",
+            "link": "",
+            "icon_origin": "mdi",
+            "icon": "code"
+        },
+        {
+            "name": "FTP",
+            "link": "",
+            "icon_origin": "mdi",
+            "icon": "code"
+        },
+        {
+            "name": "SSH",
+            "link": "",
+            "icon_origin": "mdi",
+            "icon": "code"
         }
     ]
 }

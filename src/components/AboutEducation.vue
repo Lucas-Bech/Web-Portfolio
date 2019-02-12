@@ -1,42 +1,31 @@
 <template>
-<v-flex blue darken-3 id="education" xs12 sm12 md5 lg5>
-    <h1 id="education-title" class="white--text blue darken-3 pt-1 pb-1">Education</h1>
-    <v-card v-for="degree in degrees" :key="degree.graduationDate" dark class="blue-gradient ma-3">
-            <v-card-title class="justify-center title font-weight-bold" primary-title>
-                {{ degree.title }}
-            </v-card-title>
-            <div class="subheading">{{ degree.school }}</div>
-        <v-card-text>
-            <div class="justify-center font-weight-thin">
-                {{ degree.enrollDate }} - {{ degree.graduationDate }}
-            </div>
-        </v-card-text>
-    </v-card>
+<v-flex id="education" class="grad-blue-ldl" xs12 sm6 md5 lg5>
+    <h1 id="education-title" class="white--text pt-3">Education</h1>
+    <about-education-degree 
+    v-for="degree in degrees" 
+    :key="degree.graduationDate"
+    :degree="degree">
+    </about-education-degree>
 </v-flex>
 </template>
 
 <script>
-import educationData from '../data/education.json'
+import AboutEducationDegree from '../components/AboutEducationDegree.vue'
+
 export default {
     name: 'AboutEducation',
-    data() {
-        return {
-            degrees: educationData.degrees,
-        }
-    }
+    components: {
+        AboutEducationDegree
+    },
+    props: ['degrees']
 }
 </script>
 
 <style lang="scss" scoped>
 #education {
-    border: 1px outset black;
-    background: url('../assets/zigZagDark.png') repeat;
     border-radius: 1%;
 }
 #education-title {
     border-radius: 1%;
-}
-.blue-gradient {
-    background-image: linear-gradient( 135deg, rgb(6, 131, 248) 10%, rgb(0, 58, 194) 100%);
 }
 </style>

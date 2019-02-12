@@ -1,12 +1,12 @@
 <template>
     <v-app v-cloak>
-        <TheHeader/>
-      <v-content id="main-content">
-        <v-container fluid>
-          <router-view/>
+        <TheHeader></TheHeader>
+      <v-content>
+        <v-container fluid fill-height id="main-container">
+          <router-view></router-view>
         </v-container>
       </v-content>
-        <TheFooter/>
+        <TheFooter></TheFooter>
     </v-app>
 </template>
 
@@ -19,7 +19,22 @@ export default {
   components: {
     TheHeader,
     TheFooter
-  }
+  },
+  methods: {
+        
+        getFile(/*file_to_get*/) {
+            // Consume API to fetch files
+        },
+        
+        get_fa_class(fa_type, fa_icon) {
+            return fa_type + ' fa-' + fa_icon
+        },
+        
+        is_fa(icon_origin) {
+            return icon_origin === 'fas' || icon_origin === 'fab'
+        }
+    
+    }
 };
 </script>
 
@@ -35,20 +50,18 @@ export default {
 html,
 body {
   position: fixed; // Disables overscrolling rubber-banding on mobile devices
+  width: 100%;
   height: 100%;
   margin: 0;
   overflow-x: hidden;
   background: url('./assets/darkPrism.png') repeat;
-}
-#main-content {
-  width: 100vw;
 }
 #app {
   height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background: url('./assets/darkPrism.png') repeat;
+  background: rgba(0,0,0,0);
 }
 .grad-blue-ldl {
     background-image: linear-gradient( 135deg,rgb(0, 124, 240) 5%, rgba(0, 62, 207, 0.74) 35%, rgba(0, 62, 207, 0.521) 65%, rgb(0, 124, 240) 95%);

@@ -19,6 +19,12 @@
                     "icon": "js-square"
                 },
                 {
+                    "name": "Sassy CSS",
+                    "link": "https://sass-lang.com/",
+                    "icon_origin": "fab",
+                    "icon": "sass"
+                },
+                {
                     "name": "Vue.js",
                     "link": "https://vuejs.org/",
                     "icon_origin": "fab",
@@ -70,7 +76,7 @@
         },
         {
             "title": "[Building] OpenGL Renderer",
-            "description": "[Currently Building] A graphics renderer built with OpenGL API. It uses the lightweight utility, GLFW, for cross-platform handling of windows, OpenGL contexts and handle input. Written in C++.",
+            "description": "[Currently Building] A graphics renderer built with OpenGL API. It uses the lightweight utility, GLFW, for cross-platform handling of windows, OpenGL contexts and handle input. It also uses GLEW for cross-platform querying and loading of OpenGL extensions. Written in C++.",
             "tags": [
                 {
                     "name": "C++",
@@ -106,7 +112,7 @@
         },
         {
             "title": "CodeSignal Solutions",
-            "description": "CodeSignal (formerly CodeFights) is a skills-based assessment platform whose mission is to discover, develop and promote technical talent.",
+            "description": "This is a collection of my solutions to some of the algorithmic problems on the skills-based assessment platform CodeSignal.",
             "tags": [
                 {
                     "name": "C++",

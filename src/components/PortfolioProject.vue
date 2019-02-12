@@ -1,5 +1,5 @@
 <template>
-<v-flex xs12 sm12 md12 lg6>
+<v-flex xs12 sm10 md6 lg6>
     <v-card class="ma-3" dark>
         <v-card-title class="grad-blue-ldl justify-center title font-weight-bold">{{ title }}</v-card-title>
         <v-card-text class="description pa-4">
@@ -24,6 +24,8 @@
 </template>
 
 <script>
+import AssetSourceManager from '../mixins/AssetSourceManager.js'
+
 export default {
     name: 'PortfolioProject',
     props: {
@@ -39,14 +41,7 @@ export default {
             tags: this.project.tags
         }
     },
-    methods: {
-        get_fa_class(fa_type, fa_icon) {
-            return fa_type + ' fa-' + fa_icon
-        },
-        is_fa(icon_origin) {
-            return icon_origin === 'fas' || icon_origin === 'fab'
-        }
-    }
+    mixins: [AssetSourceManager]
 }
 </script>
 

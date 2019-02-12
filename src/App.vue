@@ -19,7 +19,22 @@ export default {
   components: {
     TheHeader,
     TheFooter
-  }
+  },
+  methods: {
+        
+        getFile(/*file_to_get*/) {
+            // Consume API to fetch files
+        },
+        
+        get_fa_class(fa_type, fa_icon) {
+            return fa_type + ' fa-' + fa_icon
+        },
+        
+        is_fa(icon_origin) {
+            return icon_origin === 'fas' || icon_origin === 'fab'
+        }
+    
+    }
 };
 </script>
 
@@ -41,15 +56,12 @@ body {
   overflow-x: hidden;
   background: url('./assets/darkPrism.png') repeat;
 }
-#main-container {
-  //height: 100%;
-}
 #app {
   height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background: url('./assets/darkPrism.png') repeat;
+  background: rgba(0,0,0,0);
 }
 .grad-blue-ldl {
     background-image: linear-gradient( 135deg,rgb(0, 124, 240) 5%, rgba(0, 62, 207, 0.74) 35%, rgba(0, 62, 207, 0.521) 65%, rgb(0, 124, 240) 95%);

@@ -1,10 +1,30 @@
 {
     "name": "Lucas Bech",
     "vocation": "Software Development",
+    "aspiration": "Software Developer",
+    "interests":
+    [
+        "Science, Philosophy, Technology"
+    ],
+    "degrees": 
+    [
+        {
+            "title": "Data Technician Specializing in Programming",
+            "description": "Learning about servers, services, programming as well as other various useful tools for software development",
+            "school": "Syddansk Erhvervsskole",
+            "location": "Odense, Denmark",
+            "enrollDate": "August 2017",
+            "graduationDate": "June 2023"
+        }
+    ],
     "description": "Passionate coder and aspiring software developer studying at Syddansk Erhvervsskole.",
     "age": 18,
     "email": "Lucas.Bech.Tech@gmail.com",
-    "about": "I’ve always had an immense curiosity and I love a good challenge. I spend a significant amount of my spare time learning, exploring software development and coding. I am a data technician student specializing in programming and an aspiring software developer. I have a great passion for software development and a relentless drive to learn and improve. My main interests are science, philosophy and technology. My name is Lucas Bech, I'm 18 years old and a EUX data technician student at Syddansk Erhvervsskole in Odense, Denmark. Here I learn about servers, services, programming as well as other various useful tools for software development. At this time, I'm looking for an internship where I can put theory into practice and get real working experience. Naturally, I enjoy programming in my spare time - my other interests include science, philosophy and technology. I'm currently learning Vue.js and OpenGL.",
+    "email-icon": {
+        "icon_origin": "fas",
+        "icon": "envelope"
+    },
+    "about": "I'm an immensely curious person who spends a significant amount of time learning. In particular, I enjoy exploring software development and coding. I have great passion for software development and I love a good challenge. I'm always looking for new and innovative ways to improve. At this time, I'm looking for an internship where I can achieve real working experience.",
     "tags":
     [
         {

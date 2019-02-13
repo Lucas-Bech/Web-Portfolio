@@ -26,9 +26,3 @@ export default {
     }
 }
 </script>
-
-<style lang="scss" scoped>
-.blue-gradient {
-    background-image: linear-gradient( 135deg, rgb(6, 131, 248) 10%, rgb(0, 58, 194) 100%);
-}
-</style>

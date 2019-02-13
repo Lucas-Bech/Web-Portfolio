@@ -34,6 +34,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#about-layout > * {
+    margin: 1em auto 1em auto;
+}
 img {
     height: 1.6em;
 }

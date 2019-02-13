@@ -45,7 +45,7 @@
             ]
         },
         {
-            "title": "Dog API Web-Interface",
+            "title": "[Migrating] Dog API Web-Interface",
             "description": "Consumes an API using AJAX. This API serves images of dogs of a plethora of breeds. Allows for selection of a specific breed.",
             "tags": [
                 {

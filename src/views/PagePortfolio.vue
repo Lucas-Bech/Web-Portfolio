@@ -1,5 +1,5 @@
 <template>
-<v-layout justify-space-around wrap align-center>
+<v-layout justify-space-around wrap id="portfolio-layout">
     <PortfolioProject v-for="(project, index) in projects" :key="index" :project="project" 
     :class="{ 'animated fadeInLeft': index % 2 === 0, 
               'animated fadeInRight': index % 2 !== 0 }">
@@ -22,3 +22,10 @@ export default {
     }
 }
 </script>
+
+<style lang="scss" scoped>
+#portfolio-layout {
+    height: auto;
+}
+</style>
+

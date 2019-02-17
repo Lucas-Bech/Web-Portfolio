@@ -64,7 +64,7 @@ body {
   background: rgba(0,0,0,0);
 }
 .grad-blue-ldl {
-    background-image: linear-gradient( 135deg,rgb(0, 124, 240) 5%, rgba(0, 62, 207, 0.74) 35%, rgba(0, 62, 207, 0.521) 65%, rgb(0, 124, 240) 95%);
+    background-image: linear-gradient( 135deg,rgb(0, 124, 240) 5%, rgba(0, 62, 207, 1) 35%, rgba(0, 62, 207, 1) 65%, rgb(0, 124, 240) 95%);
 }
 .grad-blue-dl {
     background-image: linear-gradient( 105deg, rgb(3, 69, 131) 10%, rgb(5, 67, 211) 75%, rgb(33, 94, 236) 100%);

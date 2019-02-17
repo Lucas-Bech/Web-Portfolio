@@ -31,6 +31,15 @@ export default {
 
 <style lang="scss" scoped>
 .degree-description {
+    display: flex;
+    align-items: center;
     background: url('../assets/zigZagDark.png') repeat;
+    min-height: 10em;
+    p {
+        line-height: 2.0;
+        font-size: 1.2em;
+        margin: auto;
+        max-width: 85%;
+    }
 }
 </style>

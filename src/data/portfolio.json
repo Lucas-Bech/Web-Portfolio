@@ -31,7 +31,7 @@
                     "icon": "vuejs"
                 },
                 {
-                    "name": "Vuetify.js",
+                    "name": "Vuetify",
                     "link": "https://vuetifyjs.com/en/",
                     "icon_origin": "assets",
                     "icon": "vuetify.svg"
@@ -45,7 +45,7 @@
             ]
         },
         {
-            "title": "[Migrating] Dog API Web-Interface",
+            "title": "Dog API Web-Interface",
             "description": "Consumes an API using AJAX. This API serves images of dogs of a plethora of breeds. Allows for selection of a specific breed.",
             "tags": [
                 {
@@ -55,10 +55,22 @@
                     "icon": "html5"
                 },
                 {
-                    "name": "JavaScript",
-                    "link": "https://www.javascript.com/",
+                    "name": "Sassy CSS",
+                    "link": "https://sass-lang.com/",
                     "icon_origin": "fab",
-                    "icon": "js-square"
+                    "icon": "sass"
+                },
+                {
+                    "name": "Vue.ts",
+                    "link": "https://vuejs.org/",
+                    "icon_origin": "fab",
+                    "icon": "vuejs"
+                },
+                {
+                    "name": "TypeScript",
+                    "link": "https://www.typescriptlang.org/",
+                    "icon_origin": "assets",
+                    "icon": "typescript.png"
                 },
                 {
                     "name": "AJAX",
@@ -71,6 +83,12 @@
                     "link": "https://github.com/Lucas-Bech/Dog-API-Interface",
                     "icon_origin": "assets",
                     "icon": "octocat.png"
+                },
+                {
+                    "name": "Demo",
+                    "link": "https://lucas-bech.github.io/Dog-Fetcher/",
+                    "icon_origin": "mdi",
+                    "icon": "remove_red_eye"
                 }
             ]
         },

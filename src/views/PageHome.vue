@@ -1,17 +1,21 @@
 <template>
 <v-layout justify-center align-center id="home-layout">
-      <v-flex xs12 sm10 md8 class="grad-blue-ldl animated fadeInLeft">
-         <v-card dark class="h">
+      <v-flex xs12 sm10 md8 class="animated fadeInLeft">
+         <v-card dark class="grad-blue-ldl">
             <v-card-title class=" justify-center headline font-weight-bold pt-4">{{ name }}</v-card-title>
             <v-card-text>
                <p class="white--text font-weight-medium">{{ description }}</p>
             </v-card-text>
             <v-card-actions class="justify-center">
                <v-flex>
-                  <v-btn to="/Portfolio" class="blue darken-1 ml-3 mt-2 mb-2 pr-3">
+                  <v-btn 
+                  to="/Portfolio" 
+                  class="grad-blue-dl ml-3 mt-2 mb-2 pr-3">
                      Projects
                   </v-btn>
-                  <v-btn to="/About" class="blue darken-1 ml-3 mt-2 mb-2 pr-3">
+                  <v-btn 
+                  to="/About" 
+                  class="grad-blue-dl ml-3 mt-2 mb-2 pr-3">
                      About
                   </v-btn>
                </v-flex>
@@ -41,11 +45,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.h {
-   background-image: linear-gradient( 135deg,rgb(0, 62, 207) 20%, rgb(0, 124, 240) 50%, rgb(0, 62, 207) 80%);
-}
-#home-layout {
-   margin-top: .9em;
+p {
+        line-height: 2.0;
+        font-size: 1.2em;
+        margin: auto;
+        max-width: 85%;
 }
 .topic-bar {
    width: 100%;

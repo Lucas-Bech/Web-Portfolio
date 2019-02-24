@@ -1,5 +1,5 @@
 <template>
-<v-flex class="blue-gradients">
+<v-flex>
     <v-card 
     flat 
     color="rgba(0,0,0,0)"  

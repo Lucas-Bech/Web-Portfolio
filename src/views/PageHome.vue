@@ -1,18 +1,26 @@
 <template>
-<v-layout justify-center align-center id="home-layout">
+   <v-layout justify-center align-center>
       <v-flex xs12 sm10 md8 class="animated fadeInLeft">
          <v-card dark class="grad-blue-ldl">
-            <v-card-title class=" justify-center headline font-weight-bold pt-4">{{ name }}</v-card-title>
+
+            <v-card-title class=" justify-center headline font-weight-bold pt-4">
+               {{ name }}
+            </v-card-title>
+
             <v-card-text>
-               <p class="white--text font-weight-medium">{{ description }}</p>
+               <p class="white--text font-weight-medium">
+                  {{ description }}
+               </p>
             </v-card-text>
-            <v-card-actions class="justify-center">
+
+            <v-card-actions>
                <v-flex>
                   <v-btn 
                   to="/Portfolio" 
                   class="grad-blue-dl ml-3 mt-2 mb-2 pr-3">
                      Projects
                   </v-btn>
+
                   <v-btn 
                   to="/About" 
                   class="grad-blue-dl ml-3 mt-2 mb-2 pr-3">
@@ -20,18 +28,16 @@
                   </v-btn>
                </v-flex>
             </v-card-actions>
+
          </v-card>
-      </v-flex>
-   
-   
-</v-layout>
+      </v-flex>   
+   </v-layout>
 </template>
 
 <script>
 import personData from '../data/person.json'
 
 export default {
-   name: 'PageHome',
    data() {
       return {
          name: personData.name,
@@ -43,20 +49,3 @@ export default {
    }
 }
 </script>
-
-<style lang="scss" scoped>
-p {
-        line-height: 2.0;
-        font-size: 1.2em;
-        margin: auto;
-        max-width: 85%;
-}
-.topic-bar {
-   width: 100%;
-   height: auto;
-   background: #FAFAFA;
-}
-#personal-card {
-   background-image: linear-gradient( 180deg, rgb(112, 186, 255) 0%, rgb(8, 81, 250) 39%, rgb(4, 105, 201) 85%);
-}
-</style>

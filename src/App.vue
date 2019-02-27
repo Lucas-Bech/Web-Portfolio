@@ -1,13 +1,13 @@
 <template>
-    <v-app v-cloak>
-        <TheHeader></TheHeader>
-      <v-content>
-        <v-container fluid fill-height id="main-container">
-          <router-view></router-view>
-        </v-container>
-      </v-content>
-        <TheFooter></TheFooter>
-    </v-app>
+  <v-app>
+      <the-header></the-header>
+    <v-content>
+      <v-container fluid fill-height>
+        <router-view></router-view>
+      </v-container>
+    </v-content>
+      <the-footer></the-footer>
+  </v-app>
 </template>
 
 <script>
@@ -20,36 +20,15 @@ export default {
     TheHeader,
     TheFooter
   },
-  methods: {
-        
-        getFile(/*file_to_get*/) {
-            // Consume API to fetch files
-        },
-        
-        get_fa_class(fa_type, fa_icon) {
-            return fa_type + ' fa-' + fa_icon
-        },
-        
-        is_fa(icon_origin) {
-            return icon_origin === 'fas' || icon_origin === 'fab'
-        }
-    
-    }
 };
 </script>
 
 <style lang="scss">
 @import url("https://cdn.jsdelivr.net/npm/animate.css@3.5.1");
 @import url("https://use.fontawesome.com/releases/v5.6.3/css/all.css");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-[v-cloak] {
-  display: none !important;
-}
-html,
 body {
-  position: fixed; // Disables overscrolling rubber-banding on mobile devices
+  position: fixed; // Prevents overscrolling rubber-banding on mobile devices
   width: 100%;
   height: 100%;
   margin: 0;
@@ -57,12 +36,27 @@ body {
   background: url('./assets/darkPrism.png') repeat;
 }
 #app {
-  height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background: rgba(0,0,0,0);
+  background: rgba(0,0,0,0); // Body is background
 }
+.description {
+    display: flex;
+    align-items: center;
+    background: url('assets/zigZagDark.png') repeat;
+    min-height: 10em;
+    p {
+      line-height: 2.0;
+      font-size: 1.2em;
+      margin: auto;
+      max-width: 85%;
+    }
+}
+.icon {
+  height: 1.6em;
+}
+// Gradients
 .grad-blue-ldl {
     background-image: linear-gradient( 135deg,rgb(0, 124, 240) 5%, rgba(0, 62, 207, 1) 35%, rgba(0, 62, 207, 1) 65%, rgb(0, 124, 240) 95%);
 }

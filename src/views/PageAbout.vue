@@ -1,26 +1,28 @@
 <template>
-<v-layout justify-space-around row wrap align-center id="about-layout">
-   
-    <about-person-description 
-    :person="person" 
-    class="animated fadeInLeft faster">
-    </about-person-description>
+    <v-layout justify-space-around row wrap align-center>
+    
+        <about-person-description 
+        :person="person" 
+        class="animated fadeInLeft faster">
+        </about-person-description>
 
-    <about-education 
-    :degrees="person.degrees" 
-    class="animated fadeInRight faster">
-    </about-education>
+        <about-education 
+        :degrees="person.degrees" 
+        class="animated fadeInRight faster">
+        </about-education>
 
-</v-layout>
+    </v-layout>
 </template>
 
 <script>
+// Components
 import AboutPersonDescription from '../components/AboutPersonDescription.vue'
 import AboutEducation from '../components/AboutEducation.vue'
+
+// Data
 import personData from '../data/person.json'
 
 export default {
-    name: 'PageAbout',
     components: {
         AboutPersonDescription,
         AboutEducation
@@ -32,12 +34,3 @@ export default {
     },
 }
 </script>
-
-<style lang="scss" scoped>
-#about-layout > * {
-    margin: 1em auto 1em auto;
-}
-img {
-    height: 1.6em;
-}
-</style>

@@ -1,6 +1,9 @@
 <template>
-  <v-toolbar app dark id="the-header" class="primary animated slideInLeft">
-    <!--<v-toolbar-side-icon></v-toolbar-side-icon>-->
+  <v-toolbar 
+  app 
+  dark 
+  id="the-header" 
+  class="animated slideInLeft">
     <v-toolbar-title class="headline">Online Portfolio - Lucas Bech</v-toolbar-title>
     <v-spacer/>
     <v-toolbar-items>

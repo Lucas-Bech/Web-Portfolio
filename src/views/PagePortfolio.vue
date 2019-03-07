@@ -1,5 +1,5 @@
 <template>
-    <v-layout justify-space-around wrap id="portfolio-layout">
+    <v-layout justify-space-around align-content-center wrap>
         <portfolio-project 
         v-for="(project, index) in projects" 
         :key="index" 

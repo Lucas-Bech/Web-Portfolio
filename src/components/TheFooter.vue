@@ -2,8 +2,8 @@
   <v-footer 
   app 
   dark 
-  color="rgba(0,0,0,0)"
-  class="animated slideInLeft grad-blue-ldl">
+  id="the-footer"
+  class="animated slideInLeft">
 
       <v-btn 
       v-for="item in items" 
@@ -52,3 +52,9 @@ export default {
   mixins: [AssetSourceManager]
 }
 </script>
+
+<style lang="scss" scoped>
+#the-footer {
+  background-image: linear-gradient( 135deg,rgb(0, 62, 207) 10%, rgb(0, 106, 206) 100%);
+}
+</style>

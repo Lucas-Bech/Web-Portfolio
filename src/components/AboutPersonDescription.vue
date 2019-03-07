@@ -6,7 +6,7 @@
                 {{ person.aspiration }}
             </v-card-title>
 
-            <v-card-text class="description">
+            <v-card-text class="description pa-4">
                 <p>{{ person.about }}</p>
             </v-card-text>
             

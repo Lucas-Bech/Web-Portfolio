@@ -7,7 +7,7 @@
     <v-toolbar-title class="headline">Online Portfolio - Lucas Bech</v-toolbar-title>
     <v-spacer/>
     <v-toolbar-items>
-      <v-btn flat to="/Home">Home</v-btn>
+      <!--<v-btn flat to="/Home">Home</v-btn>-->
       <v-btn flat to="/Portfolio">Portfolio</v-btn>
       <v-btn flat to="/About">About</v-btn>
     </v-toolbar-items>

@@ -19,7 +19,7 @@ export default {
     },
     props: {
         degrees: {
-            type: Object,
+            type: Array,
             required: true,
         },
     },

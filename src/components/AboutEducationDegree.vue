@@ -2,6 +2,7 @@
 <v-flex>
     <v-card 
     color="rgba(0,0,0,0)"  
+    flat
     dark 
     class="ma-3">
 

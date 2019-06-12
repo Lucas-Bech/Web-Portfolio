@@ -7,7 +7,7 @@
                {{ name }}
             </v-card-title>
 
-            <v-card-text>
+            <v-card-text class="description">
                <p class="white--text font-weight-medium">
                   {{ description }}
                </p>

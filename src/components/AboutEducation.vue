@@ -1,5 +1,5 @@
 <template>
-    <v-flex id="education" class="grad-blue-ldl" xs12 sm6 md5 lg5>
+    <v-flex id="education" class="grad-blue-ldl mt-4" xs12 sm6 md5 lg5>
         <h1 class="white--text pt-3">Education</h1>
         <about-education-degree 
         v-for="degree in degrees" 
@@ -19,7 +19,7 @@ export default {
     },
     props: {
         degrees: {
-            type: Object,
+            type: Array,
             required: true,
         },
     },

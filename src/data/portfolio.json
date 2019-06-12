@@ -2,8 +2,8 @@
     "projects": 
     [
         {
-            "title": "Web Portfolio",
-            "description": "Customizable, mobile-first, responsive web portfolio with separation of code and data. Built with the front-end JavaScript framework Vue and the material design component framework Vuetify.",
+            "title": "Personal Website",
+            "description": "Customizable, mobile-first, responsive personal website with separation of code and data. Built with the front-end JavaScript framework Vue and the material design component framework Vuetify.",
             "tags": 
             [
                 {
@@ -38,7 +38,7 @@
                 },
                 {
                     "name": "Source Code",
-                    "link": "https://github.com/Lucas-Bech/Web-Portfolio",
+                    "link": "https://github.com/Lucas-Bech/Personal-Website",
                     "icon_origin": "assets",
                     "icon": "octocat.png"
                 }

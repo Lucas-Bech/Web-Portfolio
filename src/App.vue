@@ -1,24 +1,37 @@
 <template>
   <v-app>
-      <the-header></the-header>
+
+    <the-header></the-header>
+
+    <v-layout justify-center align-center row>
+    <!--<the-sidebar></the-sidebar>-->
+
     <v-content>
+
       <v-container fluid fill-height>
         <router-view></router-view>
       </v-container>
+
     </v-content>
-      <the-footer></the-footer>
+    
+    </v-layout>
+
+      <!--<the-footer></the-footer>-->
+
   </v-app>
 </template>
 
 <script>
 import TheHeader from './components/TheHeader.vue'
+import TheSidebar from './components/TheSidebar.vue'
 import TheFooter from './components/TheFooter.vue'
 
 export default {
   name: "app",
   components: {
     TheHeader,
-    TheFooter
+    //TheSidebar,
+    //TheFooter
   },
 };
 </script>
@@ -33,7 +46,7 @@ body {
   height: 100%;
   margin: 0;
   overflow-x: hidden;
-  background: url('./assets/darkPrism.png') repeat;
+  background: rgb(20, 20, 20) url('./assets/background.png') repeat;
 }
 #app {
   -webkit-font-smoothing: antialiased;

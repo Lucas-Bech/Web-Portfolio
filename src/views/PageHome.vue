@@ -1,36 +1,29 @@
 <template>
-   <v-layout justify-center align-center>
-      <v-flex xs12 sm10 md8 class="animated fadeInLeft">
-         <v-card dark class="grad-blue-ldl">
+   <v-layout id="page-home" justify-center align-center column>
+      <h1>Lucas Bech</h1>
+      <h3>Datatekniker med Speciale i Programmering</h3>
 
-            <v-card-title class=" justify-center headline font-weight-bold pt-4">
-               {{ name }}
-            </v-card-title>
-
-            <v-card-text class="description">
-               <p class="white--text font-weight-medium">
-                  {{ description }}
-               </p>
-            </v-card-text>
-
-            <v-card-actions>
-               <v-flex>
-                  <v-btn 
+      <v-flex xs12 sm10 md8 mt-3 id="link-bar" class="animated fadeInRight">
+         <v-layout justify-center align-center row>
+            <v-flex row>
+               <v-btn dark
                   to="/Portfolio" 
                   class="grad-blue-dl ml-3 mt-2 mb-2 pr-3">
-                     Projects
+                     Se mine projekter
                   </v-btn>
 
-                  <v-btn 
-                  to="/About" 
+                  <!--<v-btn dark
+                  to="/Contact" 
                   class="grad-blue-dl ml-3 mt-2 mb-2 pr-3">
-                     About
-                  </v-btn>
-               </v-flex>
-            </v-card-actions>
+                     Kontakt
+                  </v-btn>-->
+            </v-flex>
 
-         </v-card>
-      </v-flex>   
+            <v-flex>
+            </v-flex>
+            
+         </v-layout>
+      </v-flex>
    </v-layout>
 </template>
 
@@ -49,3 +42,23 @@ export default {
    }
 }
 </script>
+
+<style lang="scss" scoped>
+
+#page-home {
+   overflow: hidden;
+}
+
+h1, h2 {
+   color: #d3664d;
+   font: normal bold 84px Tahoma,Geneva,sans-serif;
+   text-transform: uppercase;
+   text-shadow: 2px 2px 4px #000000;
+}
+h3 {
+   font: normal bold 34px Tahoma,Geneva,sans-serif;
+   color: #1388d6;
+   text-transform: uppercase;
+   text-shadow: 2px 2px 4px #000000;
+}
+</style>

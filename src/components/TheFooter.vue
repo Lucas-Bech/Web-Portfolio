@@ -55,7 +55,8 @@ export default {
 
 <style lang="scss" scoped>
 #the-footer {
-  background-image: linear-gradient( 135deg,rgb(0, 62, 207) 10%, rgb(0, 106, 206) 100%);
-  background-image: linear-gradient(90deg, rgb(27, 26, 26), rgb(24, 26, 32));
+  //background-image: linear-gradient( 135deg,rgb(0, 62, 207) 10%, rgb(0, 106, 206) 100%);
+  //background-image: linear-gradient(90deg, rgb(27, 26, 26), rgb(24, 26, 32));
+  background-image: linear-gradient(90deg, rgb(6, 58, 228), rgb(194, 77, 50));
 }
-</script>
+</style>

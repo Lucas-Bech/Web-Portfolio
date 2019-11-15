@@ -2,8 +2,10 @@
     "projects": 
     [
         {
-            "title": "Personal Website",
-            "description": "Customizable, mobile-first, responsive personal website with separation of code and data. Built with the front-end JavaScript framework Vue and the material design component framework Vuetify.",
+            "title": "Portfolio",
+            "eng_title": "Personal Website",
+            "description": "Responsive hjemmeside bygget med Vue, et JavaScript framework og Vuetify, et material design component framework.",
+            "eng_description": "Customizable, mobile-first and responsive personal website. Built using the JavaScript framework Vue and the material design component framework Vuetify.",
             "tags": 
             [
                 {
@@ -37,7 +39,8 @@
                     "icon": "vuetify.svg"
                 },
                 {
-                    "name": "Source Code",
+                    "name": "Kildekode",
+                    "eng_name": "Source Code",
                     "link": "https://github.com/Lucas-Bech/Personal-Website",
                     "icon_origin": "assets",
                     "icon": "octocat.png"
@@ -45,8 +48,29 @@
             ]
         },
         {
-            "title": "[Migrating] Dog API Web-Interface",
-            "description": "Consumes an API using AJAX. This API serves images of dogs of a plethora of breeds. Allows for selection of a specific breed.",
+            "title": "CodeSignal Løsninger",
+            "eng_title": "CodeSignal Solutions",
+            "description": "En samling af mine løsninger til databaser- og algoritmiske problemer på CodeSignal.",
+            "eng_description": "This is a collection of my solutions to some of the algorithmic problems on the skills-based assessment platform CodeSignal.",
+            "tags": [
+                {
+                    "name": "C++",
+                    "link": "https://en.wikipedia.org/wiki/C%2B%2B",
+                    "icon_origin": "mdi",
+                    "icon": "code"
+                },
+                {
+                    "name": "Kildekode",
+                    "eng_name": "Source Code",
+                    "link": "https://github.com/Lucas-Bech/CodeSignal-Solutions",
+                    "icon_origin": "assets",
+                    "icon": "octocat.png"
+                }
+            ]
+        },
+        {
+            "title": "Webbrugerflade til Hunde-API",
+            "description": "Front-end til en API som serverer billeder af hunde. Hent billeder af tilfældige racer eller en specifik race.",
             "tags": [
                 {
                     "name": "HTML5",
@@ -79,7 +103,8 @@
                     "icon": "code"
                 },
                 {
-                    "name": "Source Code",
+                    "name": "Kildekode",
+                    "eng_name": "Source Code",
                     "link": "https://github.com/Lucas-Bech/Dog-API-Interface",
                     "icon_origin": "assets",
                     "icon": "octocat.png"
@@ -89,60 +114,6 @@
                     "link": "https://lucas-bech.github.io/Dog-Fetcher/",
                     "icon_origin": "mdi",
                     "icon": "remove_red_eye"
-                }
-            ]
-        },
-        {
-            "title": "[Building] OpenGL Renderer",
-            "description": "[Currently Building] A graphics renderer built with OpenGL API. It uses the lightweight utility, GLFW, for cross-platform handling of windows, OpenGL contexts and handle input. It also uses GLEW for cross-platform querying and loading of OpenGL extensions. Written in C++.",
-            "tags": [
-                {
-                    "name": "C++",
-                    "link": "https://en.wikipedia.org/wiki/C%2B%2B",
-                    "icon_origin": "mdi",
-                    "icon": "code"
-                },
-                {
-                    "name": "OpenGL",
-                    "link": "https://www.opengl.org/",
-                    "icon_origin": "mdi",
-                    "icon": "code"
-                },
-                {
-                    "name": "GLFW",
-                    "link": "https://www.glfw.org/",
-                    "icon_origin": "fas",
-                    "icon": "box-open"
-                },
-                {
-                    "name": "GLEW",
-                    "link": "http://glew.sourceforge.net/",
-                    "icon_origin": "fas",
-                    "icon": "box-open"
-                },
-                {
-                    "name": "Source Code",
-                    "link": "https://github.com/Lucas-Bech/OpenGL-Renderer--Setting-Up--",
-                    "icon_origin": "assets",
-                    "icon": "octocat.png"
-                }
-            ]
-        },
-        {
-            "title": "CodeSignal Solutions",
-            "description": "This is a collection of my solutions to some of the algorithmic problems on the skills-based assessment platform CodeSignal.",
-            "tags": [
-                {
-                    "name": "C++",
-                    "link": "https://en.wikipedia.org/wiki/C%2B%2B",
-                    "icon_origin": "mdi",
-                    "icon": "code"
-                },
-                {
-                    "name": "Source Code",
-                    "link": "https://github.com/Lucas-Bech/CodeSignal-Solutions",
-                    "icon_origin": "assets",
-                    "icon": "octocat.png"
                 }
             ]
         }

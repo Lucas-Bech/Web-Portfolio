@@ -1,31 +1,30 @@
 # Web Portfolio
-Customizable, mobile-first, responsive web portfolio with separation of code and data. 
-Built with the front-end JavaScript framework Vue and the material design
-component framework Vuetify.
+Customizable, mobile-first and responsive web portfolio. 
+Built using the JavaScript framework Vue and the material design component framework Vuetify.
 
 ## Setup
 ```
-npm install
+yarn install
 ```
 
 ### Compile and hot-reload for development on localhost
 ```
-npm run serve
+yarn run serve
 ```
 
 ### Compile and hot-reload for development on local network
 ```
-npm run dev
+yarn run dev
 ```
 
 ### Compile and minify for production
 ```
-npm run build
+yarn run build
 ```
 
 ### Lint and fix files
 ```
-npm run lint
+yarn run lint
 ```
 
 ### Customize configuration
